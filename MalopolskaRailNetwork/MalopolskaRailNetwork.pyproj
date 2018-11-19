@@ -22,13 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="InputData\StationsLocations.csv">
+    <Content Include="Documents\RoadMap.md" />
+    <Content Include="InputFiles\StationsLocations.csv">
       <Publish>False</Publish>
     </Content>
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InputData\" />
+    <Folder Include="InputFiles\" />
+    <Folder Include="Documents\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
