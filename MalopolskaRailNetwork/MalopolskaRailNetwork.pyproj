@@ -4,10 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d8f0c71a-e004-435d-adc1-96126d1d1e04</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>Scripts\SetMainDirectoryPath.py</StartupFile>
+    <SearchPath>Scripts</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>MalopolskaRailNetwork</Name>
@@ -36,7 +34,16 @@
   <ItemGroup>
     <Folder Include="InputFiles\" />
     <Folder Include="Documents\" />
+    <Folder Include="Scripts\" />
     <Folder Include="SourceFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Scripts\ListAllFiles.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scripts\SetMainDirectoryPath.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

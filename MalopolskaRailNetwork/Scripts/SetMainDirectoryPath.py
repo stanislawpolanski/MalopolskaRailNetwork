@@ -1,0 +1,1 @@
+mainDirectoryPath = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork'
