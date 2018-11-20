@@ -27,10 +27,16 @@
       <Publish>False</Publish>
     </Content>
     <Content Include="README.md" />
+    <Content Include="SourceFiles\META_GRANICE_ZAKLADOW.xml" />
+    <Content Include="SourceFiles\META_LINES.xml" />
+    <Content Include="SourceFiles\WMS_SILK_linie_kolejowe.xml" />
+    <Content Include="SourceFiles\WMS_SILK_stacje_przystanki.xml" />
+    <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="InputFiles\" />
     <Folder Include="Documents\" />
+    <Folder Include="SourceFiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
