@@ -1,6 +1,7 @@
 import os
 from os import path
-mainDirectoryPath = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork'
+import src.Paths
+mainDirectoryPath = src.Paths.GetMainDirectoryPath()
 
 def ListFiles(paths):
     for files in os.listdir(paths):
@@ -8,6 +9,6 @@ def ListFiles(paths):
         if os.path.isdir(os.path.join(newPath)):
             ListFiles(newPath)
         else:
-            print(newPath)
+            print(newPath.replace("\\", "\\\\"))
             
 ListFiles(mainDirectoryPath)
