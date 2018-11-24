@@ -1,7 +1,7 @@
 import os
 from os import path
-import src.Paths
-mainDirectoryPath = src.Paths.GetMainDirectoryPath()
+import src.Constants.ProjectPaths
+mainDirectoryPath = src.Constants.ProjectPaths.ProjectPathsStore.Main.value
 
 def ListFiles(paths):
     for files in os.listdir(paths):

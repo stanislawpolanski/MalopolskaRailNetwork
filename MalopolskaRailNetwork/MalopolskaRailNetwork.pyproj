@@ -36,12 +36,16 @@
     <Folder Include="Documents\" />
     <Folder Include="src\" />
     <Folder Include="SourceFiles\" />
+    <Folder Include="src\Constants\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Constants\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\ListAllFiles.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\Paths.py">
+    <Compile Include="src\Constants\ProjectPaths.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\__init__.py">
