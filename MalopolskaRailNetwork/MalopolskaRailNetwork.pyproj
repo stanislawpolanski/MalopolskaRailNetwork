@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d8f0c71a-e004-435d-adc1-96126d1d1e04</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\ListAllFiles.py</StartupFile>
+    <StartupFile>src\Files\ListAllFiles.py</StartupFile>
     <SearchPath>Scripts</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -37,15 +37,19 @@
     <Folder Include="src\" />
     <Folder Include="SourceFiles\" />
     <Folder Include="src\Constants\" />
+    <Folder Include="src\Files\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\Constants\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\ListAllFiles.py">
+    <Compile Include="src\Files\ListAllFiles.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\Constants\ProjectPaths.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\Files\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\__init__.py">

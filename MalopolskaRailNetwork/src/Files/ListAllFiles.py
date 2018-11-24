@@ -3,12 +3,12 @@ from os import path
 import src.Constants.ProjectPaths
 mainDirectoryPath = src.Constants.ProjectPaths.ProjectPathsStore.Main.value
 
-def ListFiles(paths):
+def FilesLister(paths):
     for files in os.listdir(paths):
         newPath = paths + "\\" + files
         if os.path.isdir(os.path.join(newPath)):
-            ListFiles(newPath)
+            FilesLister(newPath)
         else:
             print(newPath.replace("\\", "\\\\"))
             
-ListFiles(mainDirectoryPath)
+FilesLister(mainDirectoryPath)
