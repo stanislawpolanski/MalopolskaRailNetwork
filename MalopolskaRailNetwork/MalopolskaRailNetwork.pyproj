@@ -24,7 +24,6 @@
     <Content Include="InputFiles\StationsLocations.csv">
       <Publish>False</Publish>
     </Content>
-    <Content Include="README.md" />
     <Content Include="SourceFiles\META_GRANICE_ZAKLADOW.xml" />
     <Content Include="SourceFiles\META_LINES.xml" />
     <Content Include="SourceFiles\WMS_SILK_linie_kolejowe.xml" />

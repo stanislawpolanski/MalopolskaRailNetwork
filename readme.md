@@ -12,13 +12,21 @@ This project is developed for needs of [Małopolskie stacje kolejowe website](ht
 ## Analysis design
 ### Data integration
 #### Reading data
-The first step is to succesfully load all the data. Both files will be loaded and saved seperately into arrays into (depends on time of reading of data):
+The first step is to succesfully load all the data. Stations files will be loaded into arrays into (depends on time of reading of data):
 
 /LoadedData
 
-Those scripts will load data:
+This script will be stored there:
 + src/DataReaders/LoadStationsData.py
-+ src/DataReaders/LoadLinesData.py
++ src/DataReaders/LoadRaiLinesData.py (from station's file!)
+Script returns list of classes:
++ src/Models/Stations.py
++ src/Models/RailLines.py
 #### Merging datasets
-Both datasets will be merged as a n:n relationship. 
+Both datasets will be merged as a n:n relationship.
+#### Print out as an SQL
+For further processing it will be printed out as an SQL with three tables:
++ Stations
++ RailLines
++ StationsToRaiLines
 ## Result
