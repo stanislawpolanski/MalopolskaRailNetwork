@@ -55,6 +55,9 @@
     <Compile Include="src\ListFiles.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\ListSourceXMLFiles.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\__init__.py">
       <SubType>Code</SubType>
     </Compile>
