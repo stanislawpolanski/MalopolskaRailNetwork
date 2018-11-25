@@ -14,14 +14,12 @@ This project is developed for needs of [Małopolskie stacje kolejowe website](ht
 #### Reading data
 The first step is to succesfully load all the data. Stations files will be loaded into arrays into (depends on time of reading of data):
 
-/LoadedData
++ /DataRead
 
 This script will be stored there:
-+ src/DataReaders/LoadStationsData.py
-+ src/DataReaders/LoadRaiLinesData.py (from station's file!)
-Script returns list of classes:
-+ src/Models/Stations.py
-+ src/Models/RailLines.py
++ src/DataReaders/StationsReader.py
++ src/DataReaders/LinesFromStationsReader.py (from stations file!)
++ src/DataReaders/LinesFromLinesReader.py
 #### Merging datasets
 Both datasets will be merged as a n:n relationship.
 #### Print out as an SQL
