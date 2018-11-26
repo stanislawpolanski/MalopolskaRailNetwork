@@ -14,8 +14,6 @@ stationsNodes = dom.getElementsByTagName(entityNodeName)
 
 stationsList = []
 
-
-
 for node in stationsNodes:
     currentStation = dict()
     for cn in node.childNodes:
