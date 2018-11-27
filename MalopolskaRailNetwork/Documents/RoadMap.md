@@ -1,9 +1,9 @@
 # Project roadmap
 The roadmap will be published after finish of the design.
-+ [ ] Read all files:
++ [x] Read three files:
   + [x] WMS_SILK_linie_kolejowe.xml (Railways)
   + [x] WMS_SILK_stacje_przystanki.xml (Stations)
-  + [ ] WMS_SILK_zaklady.xml (Railway Units)
+  + [x] WMS_SILK_zaklady.xml (Railway Units)
 + [ ] Serialize to JSON
   + [ ] Serializer script
   + [ ] Deserializer script

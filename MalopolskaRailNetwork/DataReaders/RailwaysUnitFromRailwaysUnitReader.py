@@ -1,5 +1,13 @@
+import src.Constants.ProjectPaths
 import DataReaders.PLKXMLDataToListReader
 
-reader = DataReaders.PLKXMLDataToListReader.PLKXMLDataToListReader()
+#define input names
+sourceFileName = 'WMS_SILK_zaklady.xml'
+entityNodeName = 'SILK:WMS_SILK_zaklady'
 
-reader.LoadFile()
+sourceFilesPath = src.Constants.ProjectPaths.ProjectPathsStore.XMLSourceDataFolder.value
+sourceFilesPath = sourceFilesPath + str('\\') + sourceFileName
+
+nodes = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
+
+print(nodes)
