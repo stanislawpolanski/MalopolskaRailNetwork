@@ -41,6 +41,15 @@
     <Folder Include="src\Files\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataReaders\PLKXMLDataToListReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReaders\RailWaysFromRailWaysReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReaders\RailwaysUnitFromRailwaysUnitReader.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DataReaders\StationsReader.py">
       <SubType>Code</SubType>
     </Compile>
