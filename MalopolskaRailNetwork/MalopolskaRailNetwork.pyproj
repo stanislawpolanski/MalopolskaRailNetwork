@@ -20,6 +20,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Data\SourceDataInJSON\Stations.json" />
     <Content Include="Documents\RoadMap.md" />
     <Content Include="InputFiles\StationsLocations.csv">
       <Publish>False</Publish>
@@ -60,6 +61,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serializers\SerializeStations.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Serializers\XMLToJSONSerializer.py">
