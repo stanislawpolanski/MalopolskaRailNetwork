@@ -31,10 +31,13 @@
     <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\SourceDataInJSON\" />
     <Folder Include="InputFiles\" />
     <Folder Include="Documents\" />
     <Folder Include="DataReaders\" />
     <Folder Include="Models\" />
+    <Folder Include="Data\" />
+    <Folder Include="Serializers\" />
     <Folder Include="src\" />
     <Folder Include="SourceFiles\" />
     <Folder Include="src\Constants\" />
@@ -57,6 +60,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serializers\XMLToJSONSerializer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serializers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\Constants\__init__.py">

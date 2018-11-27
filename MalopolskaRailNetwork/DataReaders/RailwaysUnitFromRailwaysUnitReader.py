@@ -9,5 +9,3 @@ sourceFilesPath = src.Constants.ProjectPaths.ProjectPathsStore.XMLSourceDataFold
 sourceFilesPath = sourceFilesPath + str('\\') + sourceFileName
 
 nodes = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
-
-print(nodes)
