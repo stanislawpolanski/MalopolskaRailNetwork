@@ -8,7 +8,7 @@ sourceFilesPath = sourceFilesPath + str('\\') + sourceFileName
 
 entityNodeName = 'SILK:WMS_SILK_linie_kolejowe'
 
-nodes = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
+listOfRailways = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
 
 
 

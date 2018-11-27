@@ -8,4 +8,4 @@ entityNodeName = 'SILK:WMS_SILK_zaklady'
 sourceFilesPath = src.Constants.ProjectPaths.ProjectPathsStore.XMLSourceDataFolder.value
 sourceFilesPath = sourceFilesPath + str('\\') + sourceFileName
 
-nodes = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
+listOfRailwaysUnits = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
