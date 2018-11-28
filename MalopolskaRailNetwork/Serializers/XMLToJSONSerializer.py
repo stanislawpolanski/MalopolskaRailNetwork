@@ -6,10 +6,5 @@ def SerializeDictsListToXML(list, pathToTheOutputFile):
     if(os.path.isfile(pathToTheOutputFile)):
         return
     
-    outputFile = open(pathToTheOutputFile, "w+")
-
-    serializedData = json.dumps(list)
-
-    outputFile.write(serializedData)
-
-    outputFile.close()
+    with open(pathToTheOutputFile, 'w+') as outfile:
+        json.dump(list, outfile)

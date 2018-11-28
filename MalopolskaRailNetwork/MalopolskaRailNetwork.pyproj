@@ -20,6 +20,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Data\SourceDataInJSON\Railways.json" />
     <Content Include="Data\SourceDataInJSON\Stations.json" />
     <Content Include="Documents\RoadMap.md" />
     <Content Include="InputFiles\StationsLocations.csv">
@@ -63,6 +64,8 @@
     <Compile Include="Models\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Serializers\SerializeRailways.py" />
+    <Compile Include="Serializers\SerializeRailwayUnits.py" />
     <Compile Include="Serializers\SerializeStations.py">
       <SubType>Code</SubType>
     </Compile>
