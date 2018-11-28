@@ -21,6 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Data\SourceDataInJSON\Railways.json" />
+    <Content Include="Data\SourceDataInJSON\RailwayUnits.json" />
     <Content Include="Data\SourceDataInJSON\Stations.json" />
     <Content Include="Documents\RoadMap.md" />
     <Content Include="InputFiles\StationsLocations.csv">

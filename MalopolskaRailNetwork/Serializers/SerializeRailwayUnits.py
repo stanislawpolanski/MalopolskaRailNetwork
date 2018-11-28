@@ -1,7 +1,12 @@
-from DataReaders import StationsReader
-import os.path
+import src.Constants.ProjectPaths
 
+main = src.Constants.ProjectPaths.ProjectPathsStore.Main.value
+jsonPath = main + "\\Data\\SourceDataInJSON\\Railways.json"
 
-with open(output, 'w+') as outfile:
-    json.dump(railwayUnitsList, outfile)
+import DataReaders.RailWaysFromRailWaysReader
 
+DataReaders.RailWaysFromRailWaysReader
+
+import Serializers.XMLToJSONSerializer
+
+Serializers.XMLToJSONSerializer.SerializeDictsListToXML(listOfRailways, jsonPath)
