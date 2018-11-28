@@ -5,8 +5,8 @@ The roadmap will be published after finish of the design.
   + [x] WMS_SILK_stacje_przystanki.xml (Stations)
   + [x] WMS_SILK_zaklady.xml (Railway Units)
 + [ ] Serialize to JSON
-  + [ ] Serializer script
-  + [ ] Deserializer script
+  + [x] Serializer scripts
+  + [ ] Deserializer scripts
 + [ ] establishing relationship between lines & stations and other sets (like zaklady)
 + [ ] writing stations to SQL
 + [ ] writing sets to graph

@@ -40,6 +40,7 @@
     <Folder Include="DataReaders\" />
     <Folder Include="Models\" />
     <Folder Include="Data\" />
+    <Folder Include="Deserialisers\" />
     <Folder Include="Serializers\" />
     <Folder Include="src\" />
     <Folder Include="SourceFiles\" />
@@ -60,6 +61,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Deserialisers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\__init__.py">
