@@ -63,6 +63,10 @@
     <Compile Include="DataReaders\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Deserialisers\JSONDeserializer.py" />
+    <Compile Include="Deserialisers\RailwaysDeserialize.py" />
+    <Compile Include="Deserialisers\RailwayUnitsDeserialiser.py" />
+    <Compile Include="Deserialisers\StationsDeserialize.py" />
     <Compile Include="Deserialisers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
