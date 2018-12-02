@@ -8,7 +8,8 @@ The roadmap will be published after finish of the design.
   + [x] Serializer scripts
   + [x] Deserializer scripts
 + [ ] establishing relationship between lines & stations
-  + [ ] aggregate stations locations info (by lines they belong to)
+  + [ ] create data structures
+  + [ ] aggregate stations locations info
   + [ ] join stations to lines
 + [ ] writing stations to SQL
 + [ ] writing sets to graph

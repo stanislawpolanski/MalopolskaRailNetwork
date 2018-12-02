@@ -1,4 +1,4 @@
-class PointOnARailway(object):
+class PointOnARailway():
     NUMER_LINII = int()
     NAZWA_LINII = str()
     KM_OSI = int()

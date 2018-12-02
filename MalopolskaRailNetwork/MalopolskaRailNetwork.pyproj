@@ -77,6 +77,12 @@
     <Compile Include="Data\Objects\Station.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Data\Objects\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Deserialisers\JSONDeserializer.py" />
     <Compile Include="Deserialisers\RailwaysDeserialize.py" />
     <Compile Include="Deserialisers\RailwayUnitsDeserialiser.py" />

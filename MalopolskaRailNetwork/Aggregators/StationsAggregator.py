@@ -1,6 +1,7 @@
 import Deserialisers.StationsDeserialize
 import src.OnChangePrinter
-import Data.Objects
+import Data.Objects.PointOnARailway
+
 
 stationsList = Deserialisers.StationsDeserialize.returnStationsList()
 
@@ -10,7 +11,8 @@ for station in stationsList:
     name = station['NAZWA']
     stationsAgg = dict()
 
-    pointOAR = 
+    p = Data.Objects.PointOnARailway.PointOnARailway()
+    #fill data
 
     if name in stationsAgg:
         stationsAgg[name] += 1
