@@ -41,6 +41,7 @@
     <Folder Include="Models\" />
     <Folder Include="Data\" />
     <Folder Include="Deserialisers\" />
+    <Folder Include="Aggregators\" />
     <Folder Include="Serializers\" />
     <Folder Include="src\" />
     <Folder Include="SourceFiles\" />
@@ -48,6 +49,12 @@
     <Folder Include="src\Files\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aggregators\StationsAggregator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Aggregators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DataReaders\PLKXMLDataToListReader.py">
       <SubType>Code</SubType>
     </Compile>
@@ -100,6 +107,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\ListSourceXMLFiles.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\OnChangePrinter.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\__init__.py">

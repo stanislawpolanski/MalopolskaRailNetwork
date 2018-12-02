@@ -22,8 +22,9 @@ This script will be stored there:
 + src/DataReaders/LinesFromLinesReader.py
 #### Writing data
 All data will be written to JSON files.
-
-/JSONSourceFiles
++ /Serializers
++ /Deserializers
++ /JSONSourceFiles
 #### Merging datasets
 Both datasets will be merged as a n:n relationship.
 #### Print out as an SQL

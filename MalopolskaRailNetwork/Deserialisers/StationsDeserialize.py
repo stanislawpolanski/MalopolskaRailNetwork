@@ -1,8 +1,10 @@
 import src.Constants.ProjectPaths
 
-stationsPath = src.Constants.ProjectPaths.ProjectPathsStore.JSONDataFolder.value
-stationsPath += "\\" + 'Stations.json'
+def returnStationsList():
+    stationsPath = src.Constants.ProjectPaths.ProjectPathsStore.JSONDataFolder.value
+    stationsPath += "\\" + 'Stations.json'
 
-import Deserialisers.JSONDeserializer
+    import Deserialisers.JSONDeserializer
 
-stationsList = Deserialisers.JSONDeserializer.deserialize(stationsPath)
+    stationsList = Deserialisers.JSONDeserializer.deserialize(stationsPath)
+    return stationsList
