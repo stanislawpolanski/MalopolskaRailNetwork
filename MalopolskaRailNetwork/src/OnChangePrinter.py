@@ -8,8 +8,3 @@ class OnChangePrinter:
     def StepMade(self):
         self.stepsMade += 1
         print('Step number made:', self.stepsMade, 'of', self.totalSteps)
-
-#test
-x = OnChangePrinter(5)
-x.StepMade()
-x.StepMade()

@@ -34,6 +34,7 @@
     <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\Objects\" />
     <Folder Include="Data\SourceDataInJSON\" />
     <Folder Include="InputFiles\" />
     <Folder Include="Documents\" />
@@ -68,6 +69,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Objects\PointOnARailway.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Objects\Station.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Deserialisers\JSONDeserializer.py" />

@@ -1,12 +1,16 @@
 import Deserialisers.StationsDeserialize
+import src.OnChangePrinter
+import Data.Objects
 
 stationsList = Deserialisers.StationsDeserialize.returnStationsList()
-lenght = len(stationsList)
 
-i = 0
+notifier = src.OnChangePrinter.OnChangePrinter(len(stationsList))
+
 for station in stationsList:
     name = station['NAZWA']
     stationsAgg = dict()
+
+    pointOAR = 
 
     if name in stationsAgg:
         stationsAgg[name] += 1
@@ -14,5 +18,4 @@ for station in stationsList:
         stationsAgg[name] = 1
 
     #notify changes
-    i += 1
-    print('working on station ', i , ' of ', lenght, ' which is ', round(i * 100 / lenght), '%' )
+    notifier.StepMade()
