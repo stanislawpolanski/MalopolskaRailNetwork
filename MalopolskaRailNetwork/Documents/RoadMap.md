@@ -8,8 +8,12 @@ The roadmap will be published after finish of the design.
   + [x] Serializer scripts
   + [x] Deserializer scripts
 + [ ] establishing relationship between lines & stations
-  + [ ] create data structures
   + [ ] aggregate stations locations info
+    + [x] prepare data (StationsAggregator)
+    + [ ] serialize
+  + [ ] aggregate Railways locations info
+    + [ ] prepare data (RailwaysAggregator)
+    + [ ] serialize
   + [ ] join stations to lines
 + [ ] writing stations to SQL
 + [ ] writing sets to graph
