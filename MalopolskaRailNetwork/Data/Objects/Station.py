@@ -4,6 +4,6 @@ class Station:
 
     PointsOnARailway = []
 
-    def __init__(self, nazwa, rodzaj):
-        self.NAZWA = nazwa
-        self.RODZAJ = rodzaj
+    def __init__(self, NAZWA, RODZAJ):
+        self.NAZWA = NAZWA
+        self.RODZAJ = RODZAJ
