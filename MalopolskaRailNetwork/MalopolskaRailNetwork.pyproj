@@ -20,9 +20,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Data\SourceDataInJSON\Railways.json" />
-    <Content Include="Data\SourceDataInJSON\RailwayUnits.json" />
-    <Content Include="Data\SourceDataInJSON\Stations.json" />
+    <Content Include="Data\DataInJSON\Railways.json" />
+    <Content Include="Data\DataInJSON\RailwayUnits.json" />
+    <Content Include="Data\DataInJSON\Stations.json" />
     <Content Include="Documents\RoadMap.md" />
     <Content Include="InputFiles\StationsLocations.csv">
       <Publish>False</Publish>
@@ -35,7 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\Objects\" />
-    <Folder Include="Data\SourceDataInJSON\" />
+    <Folder Include="Data\DataInJSON\" />
     <Folder Include="InputFiles\" />
     <Folder Include="Documents\" />
     <Folder Include="DataReaders\" />
