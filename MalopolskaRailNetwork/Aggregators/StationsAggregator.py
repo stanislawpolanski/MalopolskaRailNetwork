@@ -30,4 +30,4 @@ for station in stationsList:
     stationsAgg[name]['LocationPoints'].append(p)
 
     #notify changes
-    #notifier.StepMade()
+    notifier.StepMade()
