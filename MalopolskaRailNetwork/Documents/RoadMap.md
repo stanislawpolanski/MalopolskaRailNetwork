@@ -1,5 +1,6 @@
 # Project roadmap
 The roadmap.
+## Reading data
 + [x] Read three files:
   + [x] WMS_SILK_linie_kolejowe.xml (Railways)
   + [x] WMS_SILK_stacje_przystanki.xml (Stations)
@@ -8,6 +9,9 @@ The roadmap.
   + [x] Serializer scripts
   + [x] Deserializer scripts
 + [x] aggregate stations locations info
-+ [ ] writing stations to SQL
+## Integration with stacje.cba.pl
++ [ ] How to integrate data into python project?
++ [ ] Design integration
+## Graph analysis
 + [ ] writing sets to graph
 + [ ] Graph analysis
