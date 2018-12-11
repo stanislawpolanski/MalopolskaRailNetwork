@@ -12,6 +12,12 @@ The roadmap.
 ## Integration with stacje.cba.pl
 + [x] Download data to XML
 + [ ] Design integration
+## Geographical analysis
++ [ ] join railway units to stations
++ [ ] extract stations in the region
 ## Graph analysis
 + [ ] writing sets to graph
-+ [ ] Graph analysis
++ [ ] Design analysis
+## Project evaluation
++ [ ] Update readme
++ [ ] Conclusions
