@@ -10,7 +10,7 @@ The roadmap.
   + [x] Deserializer scripts
 + [x] aggregate stations locations info
 ## Integration with stacje.cba.pl
-+ [ ] How to integrate data into python project?
++ [x] Download data to XML
 + [ ] Design integration
 ## Graph analysis
 + [ ] writing sets to graph
