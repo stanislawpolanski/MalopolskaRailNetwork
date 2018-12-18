@@ -1,4 +1,4 @@
-# Project roadmap
+﻿# Project roadmap
 The roadmap.
 ## Reading data
 + [x] Read three files:
@@ -11,10 +11,15 @@ The roadmap.
 + [x] aggregate stations locations info
 ## Integration with stacje.cba.pl
 + [x] Download data to XML
-+ [ ] Design integration
-## Geographical analysis
-+ [ ] join railway units to stations
-+ [ ] extract stations in the region
++ [ ] Reading stacje.cba.pl data into Python
+  + [ ] Reading stations
+  + [ ] reading railways
+  + [ ] reading stations to railways
++ [ ] Extract stations in the Małopolska region using csv file
++ [ ] Create output XML for integration with database
++ [ ] Fill the output file with lacking railways
++ [ ] Fill the output file with lacking stations
++ [ ] Create realtions in output file (stations to railways)
 ## Graph analysis
 + [ ] writing sets to graph
 + [ ] Design analysis
