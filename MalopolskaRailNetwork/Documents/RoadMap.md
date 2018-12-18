@@ -16,10 +16,14 @@ The roadmap.
   + [ ] reading railways
   + [ ] reading stations to railways
 + [ ] Extract stations in the Małopolska region using csv file
-+ [ ] Create output XML for integration with database
-+ [ ] Fill the output file with lacking railways
-+ [ ] Fill the output file with lacking stations
++ [ ] Update database file
+  + [ ] Create output XML for integration with database
+  + [ ] Fill the output file with lacking railways
+  + [ ] Fill the output file with lacking stations
 + [ ] Create realtions in output file (stations to railways)
++ [ ] merge with stacje.cba.pl
+  + [ ] create backup
+  + [ ] update
 ## Graph analysis
 + [ ] writing sets to graph
 + [ ] Design analysis

@@ -20,6 +20,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="DataReaders\stacjecbapl_Readers\StationsFromstacjecba.plReader.py">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Data\DataInJSON\Railways.json" />
     <Content Include="Data\DataInJSON\RailwayUnits.json" />
     <Content Include="Data\DataInJSON\Stations.json" />
@@ -35,6 +38,7 @@
     <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataReaders\stacjecbapl_Readers\" />
     <Folder Include="Data\Objects\" />
     <Folder Include="Data\DataInJSON\" />
     <Folder Include="InputFiles\" />
@@ -65,6 +69,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\RailwaysUnitFromRailwaysUnitReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReaders\stacjecbapl_Readers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\StationsReader.py">
