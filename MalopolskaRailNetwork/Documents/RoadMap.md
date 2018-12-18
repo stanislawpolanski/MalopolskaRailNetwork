@@ -12,8 +12,9 @@ The roadmap.
 ## Integration with stacje.cba.pl
 + [x] Download data to XML
 + [ ] Reading stacje.cba.pl data into Python
-  + [ ] Reading stations
+  + [ ] reading stations
   + [ ] reading railways
+  + [ ] reading owners
   + [ ] reading stations to railways
 + [ ] Extract stations in the Małopolska region using csv file
 + [ ] Update database file
