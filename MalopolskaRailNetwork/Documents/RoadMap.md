@@ -17,7 +17,7 @@ The roadmap.
   + [x] reading owners
   + [x] reading stations to railways
 + [ ] Extract stations in the Małopolska region using csv file
-  + [ ] read csv file
+  + [x] read csv file
   + [ ] intersect with db file
   + [ ] create output
 + [ ] Update database file
