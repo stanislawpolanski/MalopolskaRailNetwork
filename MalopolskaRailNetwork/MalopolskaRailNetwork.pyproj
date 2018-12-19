@@ -38,6 +38,7 @@
     <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataReaders\CSVReader\" />
     <Folder Include="DataReaders\stacjecbapl_Readers\" />
     <Folder Include="Data\Objects\" />
     <Folder Include="Data\DataInJSON\" />
@@ -60,6 +61,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Aggregators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReaders\CSVReader\CSVReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReaders\CSVReader\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\PLKXMLDataToListReader.py">
