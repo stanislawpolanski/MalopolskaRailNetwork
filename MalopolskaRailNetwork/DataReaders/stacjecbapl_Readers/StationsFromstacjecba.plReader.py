@@ -1,4 +1,4 @@
-#inputs:
+#inputs:name
 path = r'C:\Users\Dell\source\repos\MalopolskaRailNetwork\MalopolskaRailNetwork\SourceFiles\MSK\stacjecbapl20180912_1020.xml'
 
 #parse xml and select 'table' nodes (those with data)
@@ -6,8 +6,14 @@ from xml.dom.minidom import parse
 dom = parse(path)
 xmlnodes = dom.getElementsByTagName('table')
 
-#seperate nodes from xml file
-nodesList = []
+
+#prepare lists
+stationsDBList = []
+ownersDBList = []
+objectsToRailwaysDBList = []
+railwaysDBList = []
+
+#loop through xml to extract particular nodes
 for n in xmlnodes:
 	currentNodeToList = dict()
 
@@ -19,8 +25,15 @@ for n in xmlnodes:
 		key = e.getAttribute('name')
 		currentNodeToList[key] = e.firstChild.nodeValue
 
-	nodesList.append(currentNodeToList)
-#extract railways
-#extract owners
-#extract stations to railways
-#extract stations from objects
+	#extract railways
+	if(currentNodeToList['name'] == 'railways'):
+		railwaysDBList.append(currentNodeToList)
+	#extract owners
+	if(currentNodeToList['name'] == 'owners'):
+		ownersDBList.append(currentNodeToList)
+	#extract stations to objects
+	if(currentNodeToList['name'] == 'objects_to_railways'):
+		objectsToRailwaysDBList.append(currentNodeToList)
+	#extract stations from objects
+	if(currentNodeToList['name'] == 'objects' and currentNodeToList['TypeId'] == '1'):
+		stationsDBList.append(currentNodeToList)
