@@ -16,10 +16,19 @@ The roadmap.
   + [x] reading railways
   + [x] reading owners
   + [x] reading stations to railways
-+ [ ] Extract stations in the Małopolska region using csv file
++ [x] Extract stations in the Małopolska region using csv file
   + [x] read csv file
-  + [x] intersect csv with db file
+  + [x] intersect csv with wms file
+  + [x] create output
++ [ ] Extract railways in the Małopolska region using intersected wms/csv file
+  + [ ] intersect wms data with wms/csv file
   + [ ] create output
++ [ ] Update db file with stations from csv/wms file
+  + [ ] create extended db file
+    + [ ] add to the db file new columns
+  + [ ] intersect db file with wms/csv stations
+  + [ ] intersect db file wms/csv railways
++ [ ] intersect data with railway units (shapely?)
 + [ ] Update database file
   + [ ] Create output XML for integration with database
   + [ ] Fill the output file with lacking railways

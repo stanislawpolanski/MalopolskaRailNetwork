@@ -18,3 +18,6 @@ for csvName in csvStationsList:
             break
 
 print('total steps of', count)
+
+def returnWMSAggregatedStationsPresentInCSV():
+    return wmsStationsPresentInBothAggregatedWMSAndCSVList
