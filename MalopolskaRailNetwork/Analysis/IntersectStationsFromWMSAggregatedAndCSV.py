@@ -17,7 +17,7 @@ for csvName in csvStationsList:
             wmsStationsPresentInBothAggregatedWMSAndCSVList.append(wmsAggregatedStationsList[key])
             break
 
-print('total steps of', count)
+#print('total steps of', count)
 
 def returnWMSAggregatedStationsPresentInCSV():
     return wmsStationsPresentInBothAggregatedWMSAndCSVList
