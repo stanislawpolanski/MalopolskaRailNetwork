@@ -49,7 +49,7 @@
     <Folder Include="Data\" />
     <Folder Include="Deserialisers\" />
     <Folder Include="Aggregators\" />
-    <Folder Include="DataAnalysis\" />
+    <Folder Include="Analysis\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -64,10 +64,10 @@
     <Compile Include="Aggregators\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataAnalysis\IntersectStationsFromWMSAggregatedAndCSV.py">
+    <Compile Include="Analysis\IntersectStationsFromWMSAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataAnalysis\__init__.py">
+    <Compile Include="Analysis\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\CSVReader\CSVReader.py">
