@@ -21,7 +21,8 @@ The roadmap.
   + [x] intersect csv with wms file
   + [x] create output
 + [ ] Extract railways in the Małopolska region using intersected wms/csv file
-  + [ ] intersect wms data with wms/csv file
+  + [x] extract railways in the region from stations wms/csv file
+  + [ ] intersect those railways with wms railways file
   + [ ] create output
 + [ ] Update db file with stations from csv/wms file
   + [ ] create extended db file
