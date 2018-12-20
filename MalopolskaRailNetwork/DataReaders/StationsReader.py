@@ -13,7 +13,6 @@ dom = parse(sourceFilesPath)
 stationsNodes = dom.getElementsByTagName(entityNodeName)
 
 stationsList = []
-
 for node in stationsNodes:
     currentStation = dict()
     for cn in node.childNodes:
@@ -22,3 +21,6 @@ for node in stationsNodes:
         else:
             currentStation[cn.localName] = cn.firstChild.nodeValue
     stationsList.append(currentStation)
+
+def returnWMSStationsList():
+    return stationsList

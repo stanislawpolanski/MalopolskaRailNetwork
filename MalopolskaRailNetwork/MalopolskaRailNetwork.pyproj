@@ -49,6 +49,7 @@
     <Folder Include="Data\" />
     <Folder Include="Deserialisers\" />
     <Folder Include="Aggregators\" />
+    <Folder Include="DataAnalysis\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -61,6 +62,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Aggregators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataAnalysis\IntersectStationsFromWMSAndCSV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataAnalysis\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\CSVReader\CSVReader.py">

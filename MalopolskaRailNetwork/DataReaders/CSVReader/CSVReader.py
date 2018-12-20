@@ -11,3 +11,6 @@ with open(path, encoding='utf8') as csvFile:
 
     #remove header from the list
     csvStationsList.remove('NAZWA')
+
+def returnCSVStationsList():
+    return csvStationsList
