@@ -58,13 +58,13 @@
     <Folder Include="src\Files\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aggregators\StationsAggregator.py">
+    <Compile Include="Aggregators\WMSStationsAggregator.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Aggregators\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataAnalysis\IntersectStationsFromWMSAndCSV.py">
+    <Compile Include="DataAnalysis\IntersectStationsFromWMSAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataAnalysis\__init__.py">

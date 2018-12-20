@@ -3,7 +3,6 @@ import src.OnChangePrinter
 import Data.Objects.PointOnARailway
 import Data.Objects.Station
 
-
 stationsList = Deserialisers.StationsDeserialize.returnStationsList()
 
 notifier = src.OnChangePrinter.OnChangePrinter(len(stationsList))
@@ -30,4 +29,7 @@ for station in stationsList:
     stationsAgg[name]['LocationPoints'].append(p)
 
     #notify changes
-    notifier.StepMade()
+    #notifier.StepMade()
+
+def returnAggregatedStationsDict():
+    return stationsAgg
