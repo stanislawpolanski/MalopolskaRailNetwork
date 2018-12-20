@@ -1,4 +1,4 @@
-#DataReaders/StationsReader.py
+#Aggregators...
 import Aggregators.WMSStationsAggregator
 wmsAggregatedStationsList = Aggregators.WMSStationsAggregator.returnAggregatedStationsDict()
 #DataReaders/CSVReader/CSVReader.py
