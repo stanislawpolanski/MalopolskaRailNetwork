@@ -10,5 +10,8 @@ entityNodeName = 'SILK:WMS_SILK_linie_kolejowe'
 
 listOfRailways = DataReaders.PLKXMLDataToListReader.ReadFullNodesToList(sourceFilesPath, entityNodeName)
 
+def returnListOfRailways():
+    return listOfRailways
+
 
 
