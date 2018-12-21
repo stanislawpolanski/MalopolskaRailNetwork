@@ -20,10 +20,10 @@ The roadmap.
   + [x] read csv file
   + [x] intersect csv with wms file
   + [x] create output
-+ [ ] Extract railways in the Małopolska region using intersected wms/csv file
++ [x] Extract railways in the Małopolska region using intersected wms/csv file
   + [x] extract railways in the region from stations wms/csv file
-  + [ ] intersect those railways with wms railways file
-  + [ ] create output
+  + [x] intersect those railways with wms railways file
+  + [x] create output
 + [ ] Update db file with stations from csv/wms file
   + [ ] create extended db file
     + [ ] add to the db file new columns
