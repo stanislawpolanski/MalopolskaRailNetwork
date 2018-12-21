@@ -67,6 +67,9 @@
     <Compile Include="Analysis\ExtractRailwaysNamesInTheRegion.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Analysis\IntersectRailwaysFromWMSWithStationsInTheRegion.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Analysis\IntersectStationsFromWMSAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
