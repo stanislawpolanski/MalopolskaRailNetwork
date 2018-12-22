@@ -36,6 +36,7 @@
     <Content Include="SourceFiles\WMS_SILK_linie_kolejowe.xml" />
     <Content Include="SourceFiles\WMS_SILK_stacje_przystanki.xml" />
     <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
+    <Content Include="text.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataReaders\CSVReader\" />
