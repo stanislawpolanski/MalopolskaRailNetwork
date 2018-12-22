@@ -1,7 +1,9 @@
 ﻿## How's the progress
  For the up-to-date status see: [https://github.com/stanislawpolanski/MalopolskaRailNetwork/blob/master/MalopolskaRailNetwork/Documents/RoadMap.md](https://github.com/stanislawpolanski/MalopolskaRailNetwork/blob/master/MalopolskaRailNetwork/Documents/RoadMap.md)
  ## The aim of the project
-This project is developed for needs of [Małopolskie stacje kolejowe website](http://stacje.cba.pl/). From the list of the stations and list of geographic coordinates stations it will come to full list of stations in Małopolska region (with associations to rail lines).
+This project is developed for needs of [Małopolskie stacje kolejowe website](http://stacje.cba.pl/). From the list of the stations and list of geographic coordinates stations it will come to full list of stations in Małopolska region (with associations to rail lines). It uses following packages:
++ [numpy](http://www.numpy.org/)
++ [shapely](https://pypi.org/project/Shapely/)
 ## Raw data
 +  META_GRANICE_ZAKLADOW.xml
 +  META_LINES.xml
