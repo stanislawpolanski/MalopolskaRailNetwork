@@ -24,12 +24,17 @@ The roadmap.
   + [x] extract railways in the region from stations wms/csv file
   + [x] intersect those railways with wms railways file
   + [x] create output
++ [ ] intersect data with railway units (shapely?)
+  + [x] stations to points (go with raw stations, as they have no aggregated geographic info)
+  + [ ] railway units to polygons
+  + [ ] intersection to list (station -> railway unit)
+  + [ ] go back with railway units info to stations list
+  + [ ] create output (stations with railway units)
 + [ ] Update db file with stations from csv/wms file
   + [ ] create extended db file
     + [ ] add to the db file new columns
   + [ ] intersect db file with wms/csv stations
   + [ ] intersect db file wms/csv railways
-+ [ ] intersect data with railway units (shapely?)
 + [ ] Update database file
   + [ ] Create output XML for integration with database
   + [ ] Fill the output file with lacking railways

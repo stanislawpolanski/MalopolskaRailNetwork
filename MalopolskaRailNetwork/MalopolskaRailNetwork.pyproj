@@ -50,6 +50,7 @@
     <Folder Include="Deserialisers\" />
     <Folder Include="Aggregators\" />
     <Folder Include="Analysis\" />
+    <Folder Include="AnalysisShapely\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -62,6 +63,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Aggregators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalysisShapely\RawStationsToShapelyPoints.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalysisShapely\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\ExtractRailwaysNamesInTheRegion.py">
