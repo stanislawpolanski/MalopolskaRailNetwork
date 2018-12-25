@@ -11,3 +11,8 @@ for ru in railwayUnits:
         geometriesList.append([x, y])
 
     shapelyPolygon = Polygon(np.array(geometriesList))
+
+    ru['ShapelyPolygon'] = shapelyPolygon
+
+def returnRailwayUnitsWithShapelyPolygons():
+    return railwayUnits
