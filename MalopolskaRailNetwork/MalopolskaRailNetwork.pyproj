@@ -65,6 +65,9 @@
     <Compile Include="Aggregators\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AnalysisShapely\RailwayUnitsToShapelyPolygons.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AnalysisShapely\RawStationsToShapelyPoints.py">
       <SubType>Code</SubType>
     </Compile>
