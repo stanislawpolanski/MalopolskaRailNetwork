@@ -20,6 +20,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="AnalysisShapely\Products\StationsIntersectedWithUnits.json" />
     <Content Include="DataReaders\stacjecbapl_Readers\StationsFromstacjecba.plReader.py">
       <SubType>Code</SubType>
     </Content>
@@ -38,6 +39,7 @@
     <Content Include="SourceFiles\WMS_SILK_zaklady.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AnalysisShapely\Products\" />
     <Folder Include="AnalysisShapely\Plots\" />
     <Folder Include="DataReaders\CSVReader\" />
     <Folder Include="DataReaders\stacjecbapl_Readers\" />
@@ -64,6 +66,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Aggregators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalysisShapely\IntersectionOfStationsWithUnits.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AnalysisShapely\Plots\PlotRailwayUnits.py">
@@ -143,6 +148,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalysisShapely\RunAndSerializeIntersectionOfStationsAndUnits.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Serializers\SerializeRailways.py" />

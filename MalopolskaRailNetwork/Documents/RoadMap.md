@@ -27,7 +27,7 @@ The roadmap.
 + [ ] intersect data with railway units (shapely?)
   + [x] stations to points (go with raw stations, as they have no aggregated geographic info)
   + [x] railway units to polygons
-  + [x plot railways and stations on one image
+  + [x] plot railways and stations on one image
   + [ ] intersection to list (station -> railway unit)
     + [ ] intersect data
     + [ ] save data
