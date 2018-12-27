@@ -2,18 +2,22 @@ import matplotlib.pyplot as plt
 import AnalysisShapely.RawStationsToShapelyPoints as rs
 import shapely.geometry
 
-stations = rs.returnStationsWithShapelyPoints()
+def PrepareStationsPlot():
+    stations = rs.returnStationsWithShapelyPoints()
 
-x = []
-y = []
+    x = []
+    y = []
 
-for s in stations:
-    p = s['ShapelyPoint']
+    for s in stations:
+        p = s['ShapelyPoint']
 
-    x.append(p.x)
-    y.append(p.y)
+        x.append(p.x)
+        y.append(p.y)
     
-plt.plot(x, y, 'ro', markersize = 1)
+    plt.plot(x, y, 'ro', markersize = 1)
 
-def returnStationsPlot():
+def ReturnStationsPlot():
     return plt
+
+def ShowStationsPlot():
+    plt.show()

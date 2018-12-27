@@ -72,6 +72,9 @@
     <Compile Include="AnalysisShapely\Plots\PlotStations.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AnalysisShapely\Plots\StationsAndUnitsPlot.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AnalysisShapely\Plots\__init__.py">
       <SubType>Code</SubType>
     </Compile>
