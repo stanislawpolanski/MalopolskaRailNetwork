@@ -7,9 +7,6 @@ import AnalysisShapely.RawStationsToShapelyPoints as stationsPointsSource
 units = unitsWithPolygonsSource.returnRailwayUnitsWithShapelyPolygons()
 stations = stationsPointsSource.returnStationsWithShapelyPoints()
 
-#test case:
-stations = stations[:20]
-
 totalStationsNumber = len(stations)
 printer = ocp.OnChangePrinter(totalStationsNumber)
 

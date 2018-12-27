@@ -83,6 +83,12 @@
     <Compile Include="AnalysisShapely\Plots\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AnalysisShapely\Products\LoadIntersectedStations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnalysisShapely\Products\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AnalysisShapely\RailwayUnitsToShapelyPolygons.py">
       <SubType>Code</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="Deserialisers\RailwayUnitsDeserialiser.py" />
     <Compile Include="Deserialisers\StationsDeserialize.py" />
     <Compile Include="Deserialisers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\JSONTool.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\__init__.py">
