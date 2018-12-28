@@ -24,7 +24,7 @@ The roadmap.
   + [x] extract railways in the region from stations wms/csv file
   + [x] intersect those railways with wms railways file
   + [x] create output
-+ [ ] intersect data with railway units (shapely?)
++ [x] intersect data with railway units (shapely?)
   + [x] stations to points (go with raw stations, as they have no aggregated geographic info)
   + [x] railway units to polygons
   + [x] plot railways and stations on one image
