@@ -10,5 +10,15 @@ This project is developed for needs of [Małopolskie stacje kolejowe website](ht
 ## Modules
 + Aggregators - One station in a source file may be listed few times. This module aggregates redundant stations occurences into one.
 + Analysis - Analysis using text data.
-+ AnalysisShapely - geographic analysis.
-+ 
++ AnalysisShapely - geographic analysis
++ AnalysisShapely//Productes - products stored in JSON
++ Data//DataInJSON - source XML files serialised to JSON (using jsonpickle)
++ DataReaders - Reading source files from XML, CSV  and WWW database
++ Deserialiser - reading source data from JSON
++ Documents - roadmap.md
++ InputFiles - CSV file (geographic intersection of stations in the region, prepared in QGIS)
++ Models - to delete
++ Serialisers - XML source data serialiser to JSON
++ SourceFiles - XML data from PLK and WWW
++ src - mostly early stage scripts, OnChangePrinter (for monitoring progress of any script in command line), files lister.
++ src/JSONTool.py - jsonpickle serialiser/deserialiser
