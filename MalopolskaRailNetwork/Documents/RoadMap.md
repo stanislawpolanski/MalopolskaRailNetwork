@@ -28,9 +28,9 @@ The roadmap.
   + [x] stations to points (go with raw stations, as they have no aggregated geographic info)
   + [x] railway units to polygons
   + [x] plot railways and stations on one image
-  + [ ] intersection to list (station -> railway unit)
-    + [ ] intersect data
-    + [ ] save data
+  + [x] intersection to list (station -> railway unit)
+    + [x] intersect data
+    + [x] save data
   + [ ] go back with railway units info to stations list
   + [ ] create output (stations with railway units)
 + [ ] Update db file with stations from csv/wms file
