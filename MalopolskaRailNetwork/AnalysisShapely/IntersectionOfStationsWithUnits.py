@@ -7,8 +7,11 @@ import AnalysisShapely.RawStationsToShapelyPoints as stationsPointsSource
 units = unitsWithPolygonsSource.returnRailwayUnitsWithShapelyPolygons()
 stations = stationsPointsSource.returnStationsWithShapelyPoints()
 
+stations = stations[69:100]
+
 totalStationsNumber = len(stations)
 printer = ocp.OnChangePrinter(totalStationsNumber)
+
 
 def Intersect():
     for s in stations:
@@ -16,9 +19,9 @@ def Intersect():
             x = s['ShapelyPoint'].intersection(u['ShapelyPolygon'])
             if(not x.is_empty):
                 s['NAZWA_ZAKLADU'] = u['ZAKLAD']
-                break
         if 'NAZWA_ZAKLADU' not in s:
             s['NAZWA_ZAKLADU'] = None
+            print(s['NAZWA'])
         printer.StepMade()
 
 def returnIntersection():

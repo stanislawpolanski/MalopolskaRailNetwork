@@ -5,3 +5,6 @@ jsonPath = main + "\\AnalysisShapely\\Products\\StationsIntersectedWithUnits.jso
 
 import src.JSONTool
 stationsIntersectedWithUnits = src.JSONTool.JSONDeserialize(jsonPath)
+
+def ReturnStationsIntersectedWithUnits():
+    return stationsIntersectedWithUnits

@@ -31,8 +31,11 @@ The roadmap.
   + [x] intersection to list (station -> railway unit)
     + [x] intersect data
     + [x] save data
-  + [ ] aggregate stations info with units by geographic locations
-  + [ ] create output (stations with railway units)
+  + [x] aggregate stations info with units by geographic locations
+  + [x] create output (stations with railway units)
++ [ ] Intersect stations with railway units with stations in the region
+  + [x] intersection
+  + [ ] save data (serialise)
 + [ ] Update db file with stations from csv/wms file
   + [ ] create extended db file
     + [ ] add to the db file new columns
