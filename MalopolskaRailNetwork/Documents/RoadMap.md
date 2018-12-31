@@ -37,10 +37,10 @@ The roadmap.
   + [x] intersection
   + [x] save data (serialise)
 + [ ] Update db file with stations from csv/wms file
+  + [ ] intersect db file wms/csv railways
+  + [ ] intersect db file with wms/csv stations
   + [ ] create extended db file
     + [ ] add to the db file new columns
-  + [ ] intersect db file with wms/csv stations
-  + [ ] intersect db file wms/csv railways
 + [ ] Update database file
   + [ ] Create output XML for integration with database
   + [ ] Fill the output file with lacking railways
