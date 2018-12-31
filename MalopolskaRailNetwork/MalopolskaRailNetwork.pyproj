@@ -21,7 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="AnalysisShapely\Products\StationsIntersectedWithUnits.json" />
-    <Content Include="DataReaders\stacjecbapl_Readers\StationsFromstacjecba.plReader.py">
+    <Content Include="DataReaders\stacjecbapl_Readers\stacjecba.plReader.py">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Data\DataInJSON\Railways.json" />
