@@ -11,7 +11,7 @@
 + AnalysisShapely.RunAndSerializeIntersectionOfStationsAndUnits (that takes much time)
 + AnalysisShapely.LoadIntersectedStations (product = stations with units)
 + Aggregators.StationsWithUnitsAggregator (stations with units aggregated by locations - also a product)
-+ Analysis.IntersectStationsWithUnitsAggregatedAndCSV
++ Analysis.IntersectStationsWithUnitsAggregatedAndCSV (extract final stations in the region)
 ### Railways from WMS
 + DataReaders.RailwaysFromRailwaysReader
 + Serializers.SerializeRailways
