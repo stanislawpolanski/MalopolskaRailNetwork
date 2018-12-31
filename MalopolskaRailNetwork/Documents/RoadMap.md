@@ -1,5 +1,5 @@
 ﻿# Project roadmap
-The roadmap.
+The roadmap. See DatasetsStages.md for info grouped by datasets.
 ## Reading data
 + [x] Read three files:
   + [x] WMS_SILK_linie_kolejowe.xml (Railways)
@@ -33,12 +33,12 @@ The roadmap.
     + [x] save data
   + [x] aggregate stations info with units by geographic locations
   + [x] create output (stations with railway units)
-+ [x] Intersect stations with railway units with stations in the region
-  + [x] intersection
-  + [x] save data (serialise)
++ [ ] Intersect stations with railway units with stations in the region (extract stations in the region from all the stations)
+  + [ ] intersection
+  + [ ] save data (serialise)
 + [ ] Update db file with stations from csv/wms file
   + [ ] intersect db file wms/csv railways
-  + [ ] intersect db file with wms/csv stations
+  + [ ] intersect db file with wms/csv aggregated stations
   + [ ] create extended db file
     + [ ] add to the db file new columns
 + [ ] Update database file

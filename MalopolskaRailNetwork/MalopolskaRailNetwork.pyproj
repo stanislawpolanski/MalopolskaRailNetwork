@@ -27,6 +27,9 @@
     <Content Include="Data\DataInJSON\Railways.json" />
     <Content Include="Data\DataInJSON\RailwayUnits.json" />
     <Content Include="Data\DataInJSON\Stations.json" />
+    <Content Include="Documents\DatasetsStages.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Documents\RoadMap.md" />
     <Content Include="InputFiles\StationsLocations.csv">
       <Publish>False</Publish>
@@ -106,10 +109,16 @@
     <Compile Include="Analysis\ExtractRailwaysNamesInTheRegion.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Analysis\IntersectRailwaysFromCSVWithWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Analysis\IntersectRailwaysFromWMSWithStationsInTheRegion.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\IntersectStationsFromWMSAggregatedAndCSV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IntersectStationsWithUnitsAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\__init__.py">
