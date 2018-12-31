@@ -33,9 +33,9 @@ The roadmap. See DatasetsStages.md for info grouped by datasets.
     + [x] save data
   + [x] aggregate stations info with units by geographic locations
   + [x] create output (stations with railway units)
-+ [ ] Intersect stations with railway units with stations in the region (extract stations in the region from all the stations)
-  + [ ] intersection
-  + [ ] save data (serialise)
++ [x] Intersect stations with railway units with stations in the region (extract stations in the region from all the stations)
+  + [x] intersection
+  + [x] create output (Analysis.IntersectStationsWithUnitsAggregatedAndCSV)
 + [ ] Update db file with stations from csv/wms file
   + [ ] intersect db file wms/csv railways
   + [ ] intersect db file with wms/csv aggregated stations
