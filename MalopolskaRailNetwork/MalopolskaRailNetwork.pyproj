@@ -21,7 +21,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="AnalysisShapely\Products\StationsIntersectedWithUnits.json" />
-    <Content Include="DataReaders\stacjecbapl_Readers\stacjecba.plReader.py">
+    <Content Include="DataReaders\wwwReaders\wwwReader.py">
       <SubType>Code</SubType>
     </Content>
     <Content Include="Data\DataInJSON\Railways.json" />
@@ -45,8 +45,9 @@
   <ItemGroup>
     <Folder Include="AnalysisShapely\Products\" />
     <Folder Include="AnalysisShapely\Plots\" />
+    <Folder Include="Analysis\IntersectWMSWithWWW\" />
     <Folder Include="DataReaders\CSVReader\" />
-    <Folder Include="DataReaders\stacjecbapl_Readers\" />
+    <Folder Include="DataReaders\wwwReaders\" />
     <Folder Include="Data\Objects\" />
     <Folder Include="Data\DataInJSON\" />
     <Folder Include="InputFiles\" />
@@ -118,6 +119,9 @@
     <Compile Include="Analysis\IntersectStationsWithUnitsAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectRailwaysFromWMSWithWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Analysis\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -136,7 +140,7 @@
     <Compile Include="DataReaders\RailwaysUnitFromRailwaysUnitReader.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataReaders\stacjecbapl_Readers\__init__.py">
+    <Compile Include="DataReaders\wwwReaders\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\StationsReader.py">

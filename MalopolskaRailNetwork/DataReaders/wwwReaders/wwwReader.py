@@ -37,3 +37,6 @@ for n in xmlnodes:
 	#extract stations from objects
 	if(currentNodeToList['name'] == 'objects' and currentNodeToList['TypeId'] == '1'):
 		stationsDBList.append(currentNodeToList)
+
+def returnRailwayList():
+    return railwaysDBList
