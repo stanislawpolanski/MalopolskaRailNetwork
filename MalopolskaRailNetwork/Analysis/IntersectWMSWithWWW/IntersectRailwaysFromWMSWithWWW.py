@@ -15,7 +15,7 @@ for wKey in wms:
     for dbr in db:
         match = (dbr['Number'] == wKey)
         if(match):
-            print('match of railway:', wms[wKey])
+            print('Following railway exists in the DB', wms[wKey])
             keyExistsInDB = True
             break
     if(not keyExistsInDB):
