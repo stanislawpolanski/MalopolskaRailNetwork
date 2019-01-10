@@ -27,6 +27,9 @@
     <Content Include="Data\DataInJSON\Railways.json" />
     <Content Include="Data\DataInJSON\RailwayUnits.json" />
     <Content Include="Data\DataInJSON\Stations.json" />
+    <Content Include="Documents\Conclusions.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Documents\DatasetsStages.md">
       <SubType>Code</SubType>
     </Content>
