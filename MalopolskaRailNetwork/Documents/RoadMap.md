@@ -37,8 +37,9 @@ The roadmap. See DatasetsStages.md for info grouped by datasets.
   + [x] intersection
   + [x] create output (Analysis.IntersectStationsWithUnitsAggregatedAndCSV)
 + [ ] Update db file with stations from csv/wms file
-  + [ ] intersect db file wms/csv railways
+  + [x] intersect db file wms/csv railways
   + [ ] intersect db file with wms/csv aggregated stations
+  + [ ] create lacking relations between stations & railways
   + [ ] create extended db file
     + [ ] add to the db file new columns
 + [ ] Update database file
