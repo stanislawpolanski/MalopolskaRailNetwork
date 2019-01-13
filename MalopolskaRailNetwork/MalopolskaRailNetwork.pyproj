@@ -122,7 +122,16 @@
     <Compile Include="Analysis\IntersectStationsWithUnitsAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\CreateRealationsBetweenStationsAndRailways.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Analysis\IntersectWMSWithWWW\IntersectRailwaysFromWMSWithWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\__init__.py">
