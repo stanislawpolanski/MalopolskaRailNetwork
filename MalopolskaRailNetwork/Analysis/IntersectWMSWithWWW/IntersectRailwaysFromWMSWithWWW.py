@@ -34,6 +34,6 @@ for wKey in wms:
         finalRowSet.append(railway)
 
 
-#TODO return result
+#return result
 def returnFinalRailwaysRowSet():
     return finalRowSet
