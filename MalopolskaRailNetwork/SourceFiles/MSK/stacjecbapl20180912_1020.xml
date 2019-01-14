@@ -762,7 +762,7 @@
         <table name="objects">
             <column name="Id">113</column>
             <column name="TypeId">1</column>
-            <column name="OwnerId">1</column>
+            <column name="OwnerId">16</column>
             <column name="Name">Olkusz LHS</column>
         </table>
         <table name="objects">
