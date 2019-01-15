@@ -1110,7 +1110,7 @@
         <table name="objects">
             <column name="Id">172</column>
             <column name="TypeId">1</column>
-            <column name="OwnerId">1</column>
+            <column name="OwnerId">2</column>
             <column name="Name">Ciężkowice</column>
         </table>
         <table name="objects">
