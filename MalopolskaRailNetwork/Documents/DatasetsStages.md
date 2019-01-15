@@ -23,7 +23,7 @@
 + Deserialisers.RailwayUnitsDeserialiser
 + AnalysisShapely.RailwayUnitsToShapelyPolygons
 ## WWW dataset - All datasets read simultaneusly
-+ DataReaders.stacjecbapl_Readers.stacjecbaplReader
++ DataReaders.wwwReaders.stacjecbaplReader
 ### Data merge
 Analysis.IntersectWMSWithWWW.IntersectRailwaysFromWMSWithWWW (railways from WWW enriched with lacking railways from WMS)
 ## CSV QGIS extract
