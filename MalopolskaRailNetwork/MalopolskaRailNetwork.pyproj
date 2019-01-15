@@ -62,6 +62,7 @@
     <Folder Include="Aggregators\" />
     <Folder Include="Analysis\" />
     <Folder Include="AnalysisShapely\" />
+    <Folder Include="AuxiliaryFunctions\" />
     <Folder Include="Products\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
@@ -135,6 +136,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunctions\StringsSimilarityCalculator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunctions\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataReaders\CSVReader\CSVReader.py">
