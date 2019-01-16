@@ -5,6 +5,10 @@ import AuxiliaryFunctions.StringsSimilarityCalculator as similarityCalculator
 import Analysis.IntersectStationsWithUnitsAggregatedAndCSV as stationsSource
 wmsDict = stationsSource.returnStationsWithUnitsAggregatedInTheRegionDict()
 
+#import non existing stations
+import Products.ManuallyCreated.NonExistingPLKStationsInTheRegionInTheWWW as nes
+nonExistingStationsList = nes.returnList()
+
 #read db
 import DataReaders.wwwReaders.wwwReader as wmsSource
 dbAll = wmsSource.stationsDBList
@@ -31,8 +35,13 @@ for d in dbPLK:
     previousRatio = 0
     currentMatch = None
 
+    dbName = d['Name']
+
     for key in wmsDict:
-        currentRatio = similarityCalculator.GetStringsSimilarityRatio(d['Name'], key)
+        if(dbName in nonExistingStationsList):
+            break
+
+        currentRatio = similarityCalculator.GetStringsSimilarityRatio(dbName, key)
         if(currentRatio > previousRatio):
             currentMatch = key
             previousRatio = currentRatio
@@ -40,7 +49,6 @@ for d in dbPLK:
     match = [d['Name'], currentMatch, previousRatio]
     listOfMatches.append(match)
 
-#TODO What about non-existing stations???
 
 #extract those stations with line number = 65 - this one is LHS
 #loop through remaining stations in wms and assign new ids
@@ -52,4 +60,9 @@ def printAllMatches():
 def printNotExactMatches():
     for x in listOfMatches:
         if(x[2] < 1):
+            print(x)
+
+def printNoneMatches():
+    for x in listOfMatches:
+        if(x[1] == None):
             print(x)
