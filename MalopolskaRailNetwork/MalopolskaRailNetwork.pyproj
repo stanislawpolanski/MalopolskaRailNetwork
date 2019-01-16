@@ -64,6 +64,7 @@
     <Folder Include="AnalysisShapely\" />
     <Folder Include="AuxiliaryFunctions\" />
     <Folder Include="Products\" />
+    <Folder Include="Products\ManuallyCreated\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -188,6 +189,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Deserialisers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Products\ManuallyCreated\NonExistingPLKStationsInTheRegionInTheWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Products\ManuallyCreated\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Serializers\StationsWithUnitsAggregatedSerialiser.py">
