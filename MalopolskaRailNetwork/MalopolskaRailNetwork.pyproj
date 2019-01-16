@@ -197,6 +197,9 @@
     <Compile Include="Products\ManuallyCreated\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Products\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Serializers\StationsWithUnitsAggregatedSerialiser.py">
       <SubType>Code</SubType>
     </Compile>

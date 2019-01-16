@@ -3,5 +3,7 @@
 # - exist in the WWW DB
 # - do not exist in the WMS (destroyed)
 
-nonExistingStations = []
-nonExistingStations.append("Płaza", "Nowy Targ Fabryczny", "Ludźmierz", "Czarny Dunajec", "Rogoźnik Podhalański", "Podczerwone", "Skawce")
+nonExistingStations = ["Płaza", "Nowy Targ Fabryczny", "Ludźmierz", "Czarny Dunajec", "Rogoźnik Podhalański", "Podczerwone", "Skawce"]
+
+def returnList():
+    return nonExistingStations
