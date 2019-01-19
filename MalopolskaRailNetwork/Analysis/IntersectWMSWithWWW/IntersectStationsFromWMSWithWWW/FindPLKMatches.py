@@ -48,10 +48,13 @@ for d in dbPLK:
 
     match = [d['Name'], currentMatch, previousRatio]
     listOfMatches.append(match)
+#todo filter data so PLK lines does not contain LHS geometry info
 
-
-#extract those stations with line number = 65 - this one is LHS
+#todo extract those stations with line number = 65 - this one is LHS
 #loop through remaining stations in wms and assign new ids
+
+#extract 
+
 
 def printAllMatches():
     for x in listOfMatches:

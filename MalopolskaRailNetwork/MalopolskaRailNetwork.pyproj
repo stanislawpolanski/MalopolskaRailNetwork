@@ -49,6 +49,7 @@
     <Folder Include="AnalysisShapely\Products\" />
     <Folder Include="AnalysisShapely\Plots\" />
     <Folder Include="Analysis\IntersectWMSWithWWW\" />
+    <Folder Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\" />
     <Folder Include="DataReaders\CSVReader\" />
     <Folder Include="DataReaders\wwwReaders\" />
     <Folder Include="Data\Objects\" />
@@ -130,7 +131,16 @@
     <Compile Include="Analysis\IntersectWMSWithWWW\IntersectRailwaysFromWMSWithWWW.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW.py">
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\FindLHSMatches.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\FindPLKMatches.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\MergeMatches.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\IntersectWMSWithWWW\__init__.py">
