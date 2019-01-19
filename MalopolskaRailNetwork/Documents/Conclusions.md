@@ -5,3 +5,4 @@ There are some conclusions:
 + structured commits description
 + design folders structure
 + design analysis stages
++ use jira
