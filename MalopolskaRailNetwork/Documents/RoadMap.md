@@ -35,15 +35,10 @@ The roadmap. See DatasetsStages.md for info grouped by datasets.
   + [x] create output (stations with railway units)
 + [x] Intersect stations with railway units with stations in the region (extract stations in the region from all the stations)
   + [x] intersection
-  + [x] create output (Analysis.IntersectStationsWithUnitsAggregatedAndCSV)
-+ [ ] Divide WMS data into PLK and LHS owners
-  + [ ] Divide stations
-  + [ ] Divide railways
-  + [ ] multipolygons bugfix
-  + [ ] Rerun all analysis for both of the datasets
-+ [ ] Update db file with stations from csv/wms file
-  + [x] intersect db file wms/csv railways
-  + [ ] intersect db file with wms/csv aggregated stations
+  + [x] create output (Analysis.IntersectStationsWithUnitsAggregatedAndCSV_NoLHS)
++ [ ] Update db file with stations from csv/wms file (Analysis.IntersectWMSWithWWW)
+  + [x] intersect db file wms/csv railways (Analysis.IntersectWMSWithWWW.IntersectRailwaysFromWMSWithWWW)
+  + [x] intersect db file with wms/csv aggregated stations - find matches only
   + [ ] create lacking relations between stations & railways
   + [ ] create extended db file
     + [ ] add to the db file new columns

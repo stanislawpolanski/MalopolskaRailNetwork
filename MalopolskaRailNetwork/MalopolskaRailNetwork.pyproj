@@ -49,7 +49,6 @@
     <Folder Include="AnalysisShapely\Products\" />
     <Folder Include="AnalysisShapely\Plots\" />
     <Folder Include="Analysis\IntersectWMSWithWWW\" />
-    <Folder Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\" />
     <Folder Include="DataReaders\CSVReader\" />
     <Folder Include="DataReaders\wwwReaders\" />
     <Folder Include="Data\Objects\" />
@@ -74,6 +73,7 @@
     <Folder Include="src\Files\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aggregators\StationsWithUnitsAggregator_NoLHS.py" />
     <Compile Include="Aggregators\StationsWithUnitsAggregator.py">
       <SubType>Code</SubType>
     </Compile>
@@ -122,25 +122,17 @@
     <Compile Include="Analysis\IntersectStationsFromWMSAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Analysis\IntersectStationsWithUnitsAggregatedAndCSV_NoLHS.py" />
     <Compile Include="Analysis\IntersectStationsWithUnitsAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\IntersectWMSWithWWW\CreateRealationsBetweenStationsAndRailways.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectRailwaysFromWMSWithWWW.py">
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectRailwaysFromWMSWithWWW_NoLHS.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\FindLHSMatches.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\FindPLKMatches.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\MergeMatches.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW\__init__.py">
+    <Compile Include="Analysis\IntersectWMSWithWWW\IntersectStationsFromWMSWithWWW_NoLHS.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\IntersectWMSWithWWW\__init__.py">

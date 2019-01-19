@@ -2,8 +2,8 @@
 import AuxiliaryFunctions.StringsSimilarityCalculator as similarityCalculator
 
 #read wms
-import Analysis.IntersectStationsWithUnitsAggregatedAndCSV as stationsSource
-wmsDict = stationsSource.returnStationsWithUnitsAggregatedInTheRegionDict()
+import Analysis.IntersectStationsWithUnitsAggregatedAndCSV_NoLHS as stationsSource
+wmsDict = stationsSource.returnStationsWithUnitsAggregatedInTheRegionDict_NoLHS()
 
 #import non existing stations
 import Products.ManuallyCreated.NonExistingPLKStationsInTheRegionInTheWWW as nes
