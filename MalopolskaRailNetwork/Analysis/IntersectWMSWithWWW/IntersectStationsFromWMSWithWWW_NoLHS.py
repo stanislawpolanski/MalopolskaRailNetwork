@@ -30,6 +30,7 @@ i = 10000
 
 #loop through db and find matches, kick out matched in wms
 listOfMatches = []
+wmsMatched = set()
 
 for d in dbPLK:
     previousRatio = 0
@@ -46,12 +47,17 @@ for d in dbPLK:
             currentMatch = key
             previousRatio = currentRatio
 
-    match = [d['Name'], currentMatch, previousRatio]
+    match = [d['Name'], currentMatch, previousRatio] #db name, wms name, ratio
+    wmsMatched.add(currentMatch)
     listOfMatches.append(match)
-#todo filter data so PLK lines does not contain LHS geometry info
 
-#todo extract those stations with line number = 65 - this one is LHS
-#loop through remaining stations in wms and assign new ids
+#todo loop through remaining stations in wms and assign new ids
+for key in wmsDict:
+    if(key in wmsMatched):
+        continue
+    #no data enrichement
+    #todo just like in the railways
+
 
 #extract 
 

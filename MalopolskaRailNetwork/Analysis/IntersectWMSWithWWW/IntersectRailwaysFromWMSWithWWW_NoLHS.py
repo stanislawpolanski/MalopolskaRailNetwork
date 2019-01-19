@@ -35,5 +35,5 @@ for wKey in wms:
 
 
 #return result
-def returnFinalRailwaysRowSet():
+def returnFinalBasicRailwaysRowSet():
     return finalRowSet

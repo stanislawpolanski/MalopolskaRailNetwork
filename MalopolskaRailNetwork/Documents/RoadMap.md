@@ -42,6 +42,8 @@ The roadmap. See DatasetsStages.md for info grouped by datasets.
   + [ ] create lacking relations between stations & railways
   + [ ] create extended db file
     + [ ] add to the db file new columns
+	+ [ ] enrich stations
+	+ [ ] enrich railways
 + [ ] Update database file
   + [ ] Create output XML for integration with database
   + [ ] Fill the output file with lacking railways
