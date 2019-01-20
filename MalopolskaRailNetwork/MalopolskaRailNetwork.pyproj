@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d8f0c71a-e004-435d-adc1-96126d1d1e04</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\Files\FilesLister.py</StartupFile>
+    <StartupFile>Hello.py</StartupFile>
     <SearchPath>Scripts</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -63,7 +63,7 @@
     <Folder Include="AnalysisShapely\" />
     <Folder Include="AuxiliaryFunctions\" />
     <Folder Include="Products\" />
-    <Folder Include="Products\ManuallyCreated\" />
+    <Folder Include="ManuallyCreated\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -192,10 +192,13 @@
     <Compile Include="Deserialisers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Products\ManuallyCreated\NonExistingPLKStationsInTheRegionInTheWWW.py">
+    <Compile Include="Hello.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Products\ManuallyCreated\__init__.py">
+    <Compile Include="ManuallyCreated\NonExistingPLKStationsInTheRegionInTheWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManuallyCreated\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Products\__init__.py">
