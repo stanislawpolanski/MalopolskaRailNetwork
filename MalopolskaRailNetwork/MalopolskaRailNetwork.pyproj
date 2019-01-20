@@ -56,7 +56,6 @@
     <Folder Include="InputFiles\" />
     <Folder Include="Documents\" />
     <Folder Include="DataReaders\" />
-    <Folder Include="Models\" />
     <Folder Include="Data\" />
     <Folder Include="Deserialisers\" />
     <Folder Include="Aggregators\" />
@@ -206,9 +205,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\JSONTool.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AnalysisShapely\RunAndSerializeIntersectionOfStationsAndUnits.py">
