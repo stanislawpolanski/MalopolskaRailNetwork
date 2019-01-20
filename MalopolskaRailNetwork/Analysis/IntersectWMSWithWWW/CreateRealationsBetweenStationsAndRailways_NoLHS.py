@@ -10,6 +10,7 @@ import Analysis.IntersectStationsWithUnitsAggregatedAndCSV as stations
 
 
 #loop through all relations in station file
+    #skip LHS railway!
     #loop through all relations in db file
         #if no match then raise a flag
     #if flag raised then append relation to the final file

@@ -126,7 +126,7 @@
     <Compile Include="Analysis\IntersectStationsWithUnitsAggregatedAndCSV.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Analysis\IntersectWMSWithWWW\CreateRealationsBetweenStationsAndRailways.py">
+    <Compile Include="Analysis\IntersectWMSWithWWW\CreateRealationsBetweenStationsAndRailways_NoLHS.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Analysis\IntersectWMSWithWWW\IntersectRailwaysFromWMSWithWWW_NoLHS.py">

@@ -11,7 +11,8 @@ nonExistingStationsList = nes.returnList()
 
 #read db
 import DataReaders.wwwReaders.wwwReader as wmsSource
-dbAll = wmsSource.stationsDBList
+dbSource = wmsSource.stationsDBList
+dbAll = dbSource
 dbPLK = []
 dbLHS = []
 
@@ -51,16 +52,24 @@ for d in dbPLK:
     wmsMatched.add(currentMatch)
     listOfMatches.append(match)
 
+
 #todo loop through remaining stations in wms and assign new ids
 for key in wmsDict:
     if(key in wmsMatched):
         continue
-    #no data enrichement
     #todo just like in the railways
-
-
-#extract 
-
+    s = dict()
+    s['name'] = 'objects'
+    s['Id'] = i
+    s['TypeId'] = 1 #typeid = 1 - means station, typeid = 2 means rolling stock
+    s['OwnerId'] = 1 #this one is PLK
+    s['Name'] = key
+    #add to dbAll
+    dbAll.append(s)
+    #update matches!
+    listOfMatches.append([key, key, 1])
+    #raise up i value
+    i += 1
 
 def printAllMatches():
     for x in listOfMatches:
