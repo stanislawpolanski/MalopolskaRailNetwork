@@ -40,3 +40,6 @@ for n in xmlnodes:
 
 def returnRailwayList():
     return railwaysDBList
+
+def returnObjectsToRailwaysList():
+    return objectsToRailwaysDBList
