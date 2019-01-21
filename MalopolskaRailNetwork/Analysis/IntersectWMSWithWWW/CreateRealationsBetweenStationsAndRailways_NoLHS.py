@@ -24,8 +24,6 @@ for x in matches:
 import AuxiliaryFunctions.CheckIfRelationBetweenStationsAndRailwayExistsInDB as checker
 
 #loop through all relations in station file
-#todo THOSE BIG LETTERS =>>> SHOULD BE SMALL - FIND A BUG
-#todo something with matches???
 for key in stationsWithRailwaysWMS:
     for relation in stationsWithRailwaysWMS[key]['LocationPoints']:
         railwayNumber = relation['NUMER_LINII']
@@ -41,6 +39,6 @@ for key in stationsWithRailwaysWMS:
         #notifier.StepMade()
 
 print('done')
-#todo return result
+
 def returnLackingInDBstationsNamesToRailwaysNumbers():
     return stationsNamesToRailwaysNumbers
