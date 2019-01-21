@@ -6,7 +6,7 @@ import Analysis.IntersectStationsWithUnitsAggregatedAndCSV_NoLHS as stationsSour
 wmsDict = stationsSource.returnStationsWithUnitsAggregatedInTheRegionDict_NoLHS()
 
 #import non existing stations
-import Products.ManuallyCreated.NonExistingPLKStationsInTheRegionInTheWWW as nes
+import ManuallyCreated.NonExistingPLKStationsInTheRegionInTheWWW as nes
 nonExistingStationsList = nes.returnList()
 
 #read db
@@ -53,7 +53,6 @@ for d in dbPLK:
     listOfMatches.append(match)
 
 
-#todo loop through remaining stations in wms and assign new ids
 for key in wmsDict:
     if(key in wmsMatched):
         continue
@@ -67,7 +66,7 @@ for key in wmsDict:
     #add to dbAll
     dbAll.append(s)
     #update matches!
-    listOfMatches.append([key, key, 1])
+    listOfMatches.append([key, key, 2])
     #raise up i value
     i += 1
 
@@ -84,3 +83,13 @@ def printNoneMatches():
     for x in listOfMatches:
         if(x[1] == None):
             print(x)
+
+def getMachesFound():
+    matchesFound = []
+    for x in listOfMatches:
+        if(x[2] < 2):
+            matchesFound.append(x)
+    return matchesFound
+
+def getAllMatches():
+    return listOfMatches
