@@ -62,6 +62,7 @@
     <Folder Include="Analysis\" />
     <Folder Include="AnalysisShapely\" />
     <Folder Include="AuxiliaryFunctions\" />
+    <Folder Include="Reports\" />
     <Folder Include="Products\" />
     <Folder Include="ManuallyCreated\" />
     <Folder Include="Serializers\" />
@@ -205,6 +206,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Products\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportMergedRailways.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportMergedRailwaysWithStations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportMergedStations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Serializers\StationsWithUnitsAggregatedSerialiser.py">
