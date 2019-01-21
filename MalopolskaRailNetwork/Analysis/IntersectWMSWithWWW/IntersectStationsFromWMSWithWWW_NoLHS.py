@@ -56,7 +56,6 @@ for d in dbPLK:
 for key in wmsDict:
     if(key in wmsMatched):
         continue
-    #todo just like in the railways
     s = dict()
     s['name'] = 'objects'
     s['Id'] = i
