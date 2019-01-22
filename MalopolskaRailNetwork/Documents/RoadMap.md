@@ -41,12 +41,14 @@ The roadmap. See DatasetsStages.md for info grouped by datasets.
   + [x] intersect db file with wms/csv aggregated stations
   (Analysis.IntersectWMSWithWWW.IntersectStationsFromWMSWithWWW_NoLHS)
   + [x] create lacking relations between stations & railways
++ [ ] Create reports
+  + [ ] Create report of merged railways
   + [ ] create report of all stations in merged dataset (plk - both old and new, szczakowa, lhs)
   	+ [ ] develop
 	+ [ ] review
   + [ ] add lacking data (destroyed railways) manually
   + [ ] create final dataset
-  + [ ] create final report
+  + [ ] create final report of all stations
 	+ [ ] develop
 	+ [ ] review
   + [ ] create extended db file
