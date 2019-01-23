@@ -144,6 +144,9 @@
     <Compile Include="AuxiliaryFunctions\CheckIfRelationBetweenStationsAndRailwayExistsInDB.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AuxiliaryFunctions\DecapitalizeString.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AuxiliaryFunctions\StringsSimilarityCalculator.py">
       <SubType>Code</SubType>
     </Compile>
