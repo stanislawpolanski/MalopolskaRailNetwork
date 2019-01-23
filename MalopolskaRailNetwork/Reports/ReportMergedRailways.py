@@ -37,9 +37,3 @@ def printShortReport():
     for r in data:
         print(r['Number'], r['Name'])
 
-
-#report printing function
-
-
-#todo develop
-
