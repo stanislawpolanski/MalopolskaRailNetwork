@@ -92,3 +92,6 @@ def getMachesFound():
 
 def getAllMatches():
     return listOfMatches
+
+def getUpdatedDB():
+    return dbAll
