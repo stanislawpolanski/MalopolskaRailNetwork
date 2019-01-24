@@ -42,24 +42,25 @@ The roadmap. See DatasetsStages.md for info grouped by datasets.
   (Analysis.IntersectWMSWithWWW.IntersectStationsFromWMSWithWWW_NoLHS)
   + [x] create lacking relations between stations & railways
 + [ ] Create reports
-  + [ ] Create report of merged railways
-  + [ ] create report of all stations in merged dataset (plk - both old and new, szczakowa, lhs)
+  + [x] Create report of merged railways
+  + [ ] FT 001 create report of all stations in merged dataset (plk - both old and new, szczakowa, lhs)
   	+ [ ] develop
 	+ [ ] review
-  + [ ] add lacking data (destroyed railways) manually
-  + [ ] create final dataset
-  + [ ] create final report of all stations
+  + [ ] FT 002 add lacking data (destroyed railways) manually
+  + [ ] FT 003 create final dataset
+  + [ ] FT 004 create final report of all stations
 	+ [ ] develop
 	+ [ ] review
-  + [ ] create extended db file
+  + [ ] FT 005 create extended db file
     + [ ] add to the db file new columns
 	+ [ ] enrich stations
 	+ [ ] enrich railways
+	+ [ ] enrich relationships
 + [ ] Update database file
   + [ ] Create output XML for integration with database
   + [ ] Fill the output file with lacking railways
   + [ ] Fill the output file with lacking stations
-+ [ ] Create realtions in output file (stations to railways)
+  + [ ] Create realtions in output file (stations to railways)
 + [ ] merge with stacje.cba.pl
   + [ ] create backup
   + [ ] update
