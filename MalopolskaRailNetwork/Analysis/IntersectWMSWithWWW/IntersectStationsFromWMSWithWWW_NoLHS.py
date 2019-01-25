@@ -95,3 +95,10 @@ def getAllMatches():
 
 def getUpdatedDB():
     return dbAll
+
+def getDbToWmsMatchesDict():
+    matchesDict = dict()
+    for m in getAllMatches():
+        matchesDict[m[0]] = m[1]
+
+    return matchesDict
