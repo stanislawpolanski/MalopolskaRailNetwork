@@ -51,6 +51,7 @@
     <Folder Include="Analysis\IntersectWMSWithWWW\" />
     <Folder Include="DataReaders\CSVReader\" />
     <Folder Include="DataReaders\wwwReaders\" />
+    <Folder Include="Data\DataSnapshots\" />
     <Folder Include="Data\Objects\" />
     <Folder Include="Data\DataInJSON\" />
     <Folder Include="InputFiles\" />
@@ -65,6 +66,7 @@
     <Folder Include="Reports\" />
     <Folder Include="Products\" />
     <Folder Include="ManuallyCreated\" />
+    <Folder Include="Reports\Auxiliary\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -209,6 +211,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Products\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Auxiliary\StationsAndRailwaysToJSON.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Auxiliary\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\ReportMergedRailways.py">

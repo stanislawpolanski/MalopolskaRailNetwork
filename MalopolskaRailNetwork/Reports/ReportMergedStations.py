@@ -31,3 +31,6 @@ def printShortJsonRows():
         if(stemp['WMSData'] is not None):
             s['WMSData'] = 'WMS data present'
         print(stemp)
+
+def returnMergedStations():
+    return dbAll

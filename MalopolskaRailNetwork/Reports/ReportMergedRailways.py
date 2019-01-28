@@ -24,7 +24,6 @@ for railway in data:
 
     railway['Geometry'] = None
 
-print('done')
 #sort by railway number
 data.sort(key = lambda x: int(x['Number']))
 
