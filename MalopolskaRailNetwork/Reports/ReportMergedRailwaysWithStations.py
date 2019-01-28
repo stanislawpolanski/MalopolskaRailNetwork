@@ -11,4 +11,7 @@ stations = jst.JSONDeserialize(stationsPath)
 
 
 for r in railways:
-    num = r['Number']
+    num = int(r['Number'])
+    for s in stations:
+        for location in s['WMSData']['LocationPoints']:
+            print(s['Name'], location)
