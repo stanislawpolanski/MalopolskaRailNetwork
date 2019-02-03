@@ -33,6 +33,9 @@
     <Content Include="Documents\DatasetsStages.md">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Documents\FinalDataSetAgreement.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Documents\NamingConventions.md">
       <SubType>Code</SubType>
     </Content>
