@@ -229,6 +229,9 @@
     <Compile Include="Reports\Auxiliary\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Reports\Datasets\Railways_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Reports\Datasets\RailwayUnits_Dataset.py">
       <SubType>Code</SubType>
     </Compile>
