@@ -211,6 +211,9 @@
     <Compile Include="Hello.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ManuallyCreated\NonExistingPLKRailwaysInTheRegionIntTheWWW.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ManuallyCreated\NonExistingPLKStationsInTheRegionInTheWWW.py">
       <SubType>Code</SubType>
     </Compile>
