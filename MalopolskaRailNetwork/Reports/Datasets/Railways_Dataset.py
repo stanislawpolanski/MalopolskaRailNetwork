@@ -4,4 +4,12 @@ def GetRailways_List():
     import Reports.Auxiliary.GetStationsAndRailwaysSnapshots as RailwaysSource
     Railways = RailwaysSource.GetRailwaysSnapshot_List()
 
+    import ManuallyCreated.NonExistingPLKRailwaysInTheRegionIntTheWWW as NonExistingSource
+    NonExisting = NonExistingSource.returnNonExistingRailwaysNumbers()
+
+    for x in NonExisting:
+        for r in Railways:
+            if(x == int(r['Number'])):
+                r['Geometry'] = None
+
     return Railways
