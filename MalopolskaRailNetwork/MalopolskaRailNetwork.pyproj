@@ -73,6 +73,7 @@
     <Folder Include="Products\" />
     <Folder Include="ManuallyCreated\" />
     <Folder Include="Reports\Auxiliary\" />
+    <Folder Include="Reports\Datasets\" />
     <Folder Include="Serializers\" />
     <Folder Include="SourceFiles\MSK\" />
     <Folder Include="src\" />
@@ -219,10 +220,19 @@
     <Compile Include="Products\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Reports\Auxiliary\GetStationsAndRailwaysSnapshots.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Reports\Auxiliary\StationsAndRailwaysToJSON.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\Auxiliary\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\RailwayUnits_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\ReportMergedRailways.py">
