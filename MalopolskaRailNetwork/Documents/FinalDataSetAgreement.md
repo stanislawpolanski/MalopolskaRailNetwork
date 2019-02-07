@@ -18,7 +18,7 @@ Railways dataset will be stored as a list of dicts. Each dict will represent one
 ### Stations dataset
 List of dicts, param LocationPoints is a list of dicts with locations.
 #### Structure of stations dataset
-+ Id (inherited from DB key)
++ Id (inherited from StatDB key)
 + Name
 + OwnerId (read from DB, new PLK OwnerId = 1)
 + RailwayUnitId - FK to railway units

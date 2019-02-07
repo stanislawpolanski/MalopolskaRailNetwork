@@ -4,6 +4,8 @@ import DataReaders.wwwReaders.wwwReader as SourceOfRelationships
 stations = SourceOfStations.returnMergedStations()
 relationships = SourceOfRelationships.returnObjectsToRailwaysList()
 
+Stations_Dataset = []
+
 #correct Olkusz
 i = 0
 for x in stations:
@@ -24,5 +26,12 @@ stations[OlkuszLhs_index]['WMSData']['NAZWA_ZAKLADU'] = None
 stations[OlkuszLhs_index]['WMSData']['LocationPoints'] = []
 stations[OlkuszLhs_index]['WMSData']['LocationPoints'].append(LhsLocation)
 #enrich stations with DB relations, otherwise DB relations = None
+for s in stations:
+    Station = dict()
+    Station['Id'] = s['Id']
+    Station['Name'] = s['Name']
+    Station['OwnerId'] = s['OwnerId']
+
+
 #TODO
 #process each station and create full relations list
