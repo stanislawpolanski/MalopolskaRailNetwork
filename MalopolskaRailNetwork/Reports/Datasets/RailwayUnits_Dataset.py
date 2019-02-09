@@ -34,34 +34,33 @@ def ExtractUnitsInTheRegion_List():
     return UnitsInTheRegion_Raw
             
 #create railway units dataset due to agreement
-Units_Dataset = []
 Geometries_Partial_Dataset = []
+Units_Dataset = []
 
-def ProcessDatasets():
-    Units_Raw = ExtractUnitsInTheRegion_List()
-    index = 10000
+Units_Raw = ExtractUnitsInTheRegion_List()
 
-    for u in Units_Raw:
-        unit = dict()
-        unit['Id'] = index
-        unit['Name'] = u['ZAKLAD']
-        unit['GeometriesId'] = index
+index = 10000
 
-        Units_Dataset.append(unit)
+for u in Units_Raw: 
 
-        geometry = dict()
-        geometry['Id'] = index
-        geometry['Value'] = u['GEOM']
+    unit = dict()
+    unit['Id'] = index
+    unit['Name'] = u['ZAKLAD']
+    unit['GeometriesId'] = index
 
-        Geometries_Partial_Dataset.append(geometry)
+    Units_Dataset.append(unit)
 
-        index += 1
+    geometry = dict()
+    geometry['Id'] = index
+    geometry['Value'] = u['GEOM']
+
+    Geometries_Partial_Dataset.append(geometry)
+
+    index += 1
 
 
 def ReturnUnitsDataset():
-    ProcessDatasets()
     return Units_Dataset
 
 def ReturnGeometriesPartialDataset():
-    ProcessDatasets()
     return Geometries_Partial_Dataset

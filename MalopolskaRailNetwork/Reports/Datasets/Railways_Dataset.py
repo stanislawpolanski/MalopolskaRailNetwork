@@ -55,11 +55,10 @@ def ProcessDatasets():
         Railways_Dataset.append(new)
         Geometries_Partial_Dataset.append(geometry)
 
+ProcessDatasets()
 
 def ReturnRailwaysDataset():
-    ProcessDatasets()
     return Railways_Dataset
 
 def ReturnGeometriesPartialDataset():
-    ProcessDatasets()
     return Geometries_Partial_Dataset

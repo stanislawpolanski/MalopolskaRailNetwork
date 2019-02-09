@@ -107,3 +107,6 @@ for r in relationships:
 print('done so far')
 #TODO
 #process each station and create full relations list
+
+def ReturnGeometriesPartialDataset():
+    return Geometries_Dataset
