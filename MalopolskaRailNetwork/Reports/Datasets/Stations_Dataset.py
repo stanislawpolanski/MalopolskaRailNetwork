@@ -8,6 +8,8 @@ relationships = SourceOfRelationships.returnObjectsToRailwaysList()
 railwayUnits = SourceOfRailwaysUnits.ReturnUnitsDataset()
 railways = SourceOfRailways.ReturnRailwaysDataset()
 
+
+
 Hashtable_Railways = dict()
 
 for r in railways:
@@ -46,6 +48,8 @@ stations[OlkuszLhs_index]['WMSData']['LocationPoints'].append(LhsLocation)
 index_geometries = 30000
 index_relationships = 1
 
+Hashset_relationships = set()
+
 for s in stations:
     Station = dict()
     Station['Id'] = int(s['Id'])
@@ -65,20 +69,40 @@ for s in stations:
             rel['BeginningKmpost'] = float(point['KM_POCZ'])
             rel['CentreKmpost'] = float(point['KM_OSI'])
             rel['EndingKmpost'] = float(point['KM_KONC'])
-            rel['RaiwalyId'] = int(Hashtable_Railways[int(point['NUMER_LINII'])])
+            rel['RailwayId'] = int(Hashtable_Railways[int(point['NUMER_LINII'])])
             rel['GeometriesId'] = index_geometries
             #GeometryId [optional] - FK to geometries
             geom = dict()
             geom['Id'] = index_geometries
             geom['Value'] = point['GEOM']
 
+            element = str(rel['RailwayId']) + '-' + str(s['Id'])
+
             index_relationships += 1
             index_geometries += 1
+
             Geometries_Dataset.append(geom)
             Relationships_Dataset.append(rel)
+            Hashset_relationships.add(element)
+            element = None
 
-    #print out geometries into seperate table
-    #read in db relations
+    
+#read in db relations
+for r in relationships:
+    element = element = str(r['LineId']) + '-' + str(r['ObjectId'])
+    if(element not in Hashset_relationships):
+            rel = dict()
+            rel['Id'] = index_relationships
+            rel['BeginningKmpost'] = None
+            rel['CentreKmpost'] = float(r['KilometerPost'])
+            rel['EndingKmpost'] = None
+            rel['RailwayId'] = int(r['LineId'])
+            rel['GeometriesId'] = None
+
+            Relationships_Dataset.append(rel)
+
+            index_relationships += 1
+
 
 print('done so far')
 #TODO
