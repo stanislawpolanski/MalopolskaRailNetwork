@@ -27,7 +27,7 @@ List of dicts, param LocationPoints is a list of dicts with locations.
 #### Structure of LocationPoints subset (relations to DB)
 Id - PK
 GeometryId [optional] - FK to geometries
-EndingKmpost [optional] 
-CentreKmpost
 BeginningKmpost [optional] 
+CentreKmpost
+EndingKmpost [optional] 
 RailwayId - FK to railways
