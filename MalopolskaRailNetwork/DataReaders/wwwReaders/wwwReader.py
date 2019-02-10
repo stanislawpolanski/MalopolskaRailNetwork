@@ -12,6 +12,7 @@ stationsDBList = []
 ownersDBList = []
 objectsToRailwaysDBList = []
 railwaysDBList = []
+rollingStockDBList = []
 
 #loop through xml to extract particular nodes
 for n in xmlnodes:
@@ -38,8 +39,16 @@ for n in xmlnodes:
 	if(currentNodeToList['name'] == 'objects' and currentNodeToList['TypeId'] == '1'):
 		stationsDBList.append(currentNodeToList)
 
+    #extract rolling stock from objects
+	if(currentNodeToList['name'] == 'objects' and currentNodeToList['TypeId'] == '2'):
+		rollingStockDBList.append(currentNodeToList)
+
+
 def returnRailwayList():
     return railwaysDBList
 
 def returnObjectsToRailwaysList():
     return objectsToRailwaysDBList
+
+def returnRollingStockList():
+    return rollingStockDBList

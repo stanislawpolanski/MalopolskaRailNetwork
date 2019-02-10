@@ -1,6 +1,8 @@
 # Final dataset agreement
 ## Assumptions
-Final dataset should include both railways and stations and their relations. It will be three datasets. On of stations (with locations - those will represent relationships between stations and railways), railway units and another of railways.
+Final dataset should include both railways and stations and their relations. It will be three datasets. On of stations (with locations - those will represent relationships between stations and railways), railway units and another of railways. Abbreviations:
++ PK - primary key
++ FK - foreign key
 ### Geometries
 Id - key
 Value - geometries
@@ -31,3 +33,10 @@ BeginningKmpost [optional]
 CentreKmpost
 EndingKmpost [optional] 
 RailwayId - FK to railways
+### Owners dataset
++ Id - PK
++ Name
+### Rolling stock dataset
+Id - PK
+OwnerId - FK to Owners
+Name

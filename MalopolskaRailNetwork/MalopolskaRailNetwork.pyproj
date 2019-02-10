@@ -235,10 +235,16 @@
     <Compile Include="Reports\Datasets\Geometries_Dataset.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Reports\Datasets\Owners_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Reports\Datasets\Railways_Dataset.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\Datasets\RailwayUnits_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\RollingStock_Dataset.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\Datasets\Stations_Dataset.py">
