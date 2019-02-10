@@ -24,7 +24,7 @@ List of dicts, param LocationPoints is a list of dicts with locations.
 + Name
 + OwnerId (read from DB, new PLK OwnerId = 1)
 + RailwayUnitId - FK to railway units
-+ TypeOfAPoint (may be station, siding etc.)
++ TypeOfAPoint (may be station, siding etc.)- FK to Types of a point table
 + LocationPoints[]
 #### Structure of LocationPoints subset (relations to DB)
 Id - PK
@@ -33,6 +33,9 @@ BeginningKmpost [optional]
 CentreKmpost
 EndingKmpost [optional] 
 RailwayId - FK to railways
+#### Types of a point
+Id - PK
+AbbreviatedName - like PO, ST
 ### Owners dataset
 + Id - PK
 + Name

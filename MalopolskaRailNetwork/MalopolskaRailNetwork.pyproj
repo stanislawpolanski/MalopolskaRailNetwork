@@ -250,6 +250,9 @@
     <Compile Include="Reports\Datasets\Stations_Dataset.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Reports\Datasets\TypesOfAPoint_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Reports\Datasets\__init__.py">
       <SubType>Code</SubType>
     </Compile>

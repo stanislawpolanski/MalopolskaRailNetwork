@@ -2,12 +2,14 @@ import Reports.ReportMergedStations as SourceOfStations
 import DataReaders.wwwReaders.wwwReader as SourceOfRelationships
 import Reports.Datasets.RailwayUnits_Dataset as SourceOfRailwaysUnits
 import Reports.Datasets.Railways_Dataset as SourceOfRailways
+import Reports.Datasets.TypesOfAPoint_Dataset as SourceOfTypesOfAPoint
+
 
 stations = SourceOfStations.returnMergedStations()
 relationships = SourceOfRelationships.returnObjectsToRailwaysList()
 railwayUnits = SourceOfRailwaysUnits.ReturnUnitsDataset()
 railways = SourceOfRailways.ReturnRailwaysDataset()
-
+typesOfAPoint_Hashtable = SourceOfTypesOfAPoint.ReturnHashtableNamesToIds()
 
 
 Hashtable_Railways = dict()
@@ -61,6 +63,13 @@ for s in stations:
     else:
         Station['RailwayUnitId'] = None
     #todo extract typeofapoint
+    if((s['WMSData'] is not None) and ('RODZAJ' in s['WMSData']) and (s['WMSData']['RODZAJ'] is not None)):
+        Station['TypeOfAPoint'] = typesOfAPoint_Hashtable[s['WMSData']['RODZAJ']]
+    else:
+        Station['TypeOfAPoint'] = None
+
+    Stations_Dataset.append(Station)
+
     #read out rest of the wms data
     if((s['WMSData'] is not None) and ('LocationPoints' in s['WMSData']) and (s['WMSData']['LocationPoints'] is not None)):
         for point in s['WMSData']['LocationPoints']:
@@ -110,3 +119,6 @@ print('done so far')
 
 def ReturnGeometriesPartialDataset():
     return Geometries_Dataset
+
+def ReturnStationsDataset():
+    return Stations_Dataset
