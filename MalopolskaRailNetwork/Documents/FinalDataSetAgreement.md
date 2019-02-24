@@ -4,12 +4,12 @@ Final dataset should include both railways and stations and their relations. It 
 + PK - primary key
 + FK - foreign key
 ### Geometries
-Id - key
-Value - geometries
++ Id - key
++ Value - geometries
 ### Railway units dataset
-Id
-Name
-GeometriesId - FK to Geometries
++ Id
++ Name
++ GeometriesId - FK to Geometries
 ### Railways dataset
 Railways dataset will be stored as a list of dicts. Each dict will represent one railway. They keys will be following:
 + Id (inherited from DB key)
@@ -27,19 +27,19 @@ List of dicts, param LocationPoints is a list of dicts with locations.
 + TypeOfAPoint (may be station, siding etc.)- FK to Types of a point table
 + LocationPoints[]
 #### Structure of LocationPoints subset (relations to DB)
-Id - PK
-GeometryId [optional] - FK to geometries
-BeginningKmpost [optional] 
-CentreKmpost
-EndingKmpost [optional] 
-RailwayId - FK to railways
++ Id - PK
++ GeometryId [optional] - FK to geometries
++ BeginningKmpost [optional] 
++ CentreKmpost
++ EndingKmpost [optional] 
++ RailwayId - FK to railways
 #### Types of a point
-Id - PK
-AbbreviatedName - like PO, ST
++ Id - PK
++ AbbreviatedName - like PO, ST
 ### Owners dataset
 + Id - PK
 + Name
 ### Rolling stock dataset
-Id - PK
-OwnerId - FK to Owners
-Name
++ Id - PK
++ OwnerId - FK to Owners
++ Name
