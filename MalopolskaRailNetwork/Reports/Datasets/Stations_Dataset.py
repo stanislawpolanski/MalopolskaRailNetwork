@@ -122,3 +122,9 @@ def ReturnGeometriesPartialDataset():
 
 def ReturnStationsDataset():
     return Stations_Dataset
+
+import src.JSONTool as jst
+path = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\Stations_Dataset.json'
+
+jst.JSONSerialize(Stations_Dataset, path)
+print("serialising done - stations")

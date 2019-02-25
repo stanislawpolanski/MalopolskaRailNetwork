@@ -64,3 +64,9 @@ def ReturnUnitsDataset():
 
 def ReturnGeometriesPartialDataset():
     return Geometries_Partial_Dataset
+
+import src.JSONTool as jst
+path = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\RailwayUnits_Dataset.json'
+
+jst.JSONSerialize(Units_Dataset, path)
+print("serialising done")

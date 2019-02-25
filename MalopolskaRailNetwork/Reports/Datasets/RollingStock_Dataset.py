@@ -13,3 +13,9 @@ for r in RawRollingStock:
 
 def ReturnRollingStockDataset():
     return RollingStock_Dataset
+
+import src.JSONTool as jst
+path = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\RollingStock_Dataset.json'
+
+jst.JSONSerialize(RollingStock_Dataset, path)
+print("serialising done")

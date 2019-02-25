@@ -7,3 +7,9 @@ RailwayUnits_Geometries = Source_RailwayUnits.ReturnGeometriesPartialDataset()
 Stations_Geometries = Source_Stations.ReturnGeometriesPartialDataset()
 
 Geometries_Dataset = RailwayUnits_Geometries + Railways_Geometries + Stations_Geometries
+
+import src.JSONTool as jst
+path = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\Geometries_Dataset.json'
+
+jst.JSONSerialize(Geometries_Dataset, path)
+print("serialising done")
