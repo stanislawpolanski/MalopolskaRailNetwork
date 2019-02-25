@@ -30,3 +30,9 @@ def ReturnHashtableNamesToIds():
         Hashtable[t['AbbreviatedName']] = t['Id']
 
     return Hashtable
+
+import src.JSONTool as jst
+path = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\TypesOfAPoint_Dataset.json'
+
+jst.JSONSerialize(TypesOfAPoint_Dataset, path)
+print("serialising done - types of a point")
