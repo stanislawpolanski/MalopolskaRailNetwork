@@ -27,13 +27,13 @@ List of dicts, param LocationPoints is a list of dicts with locations.
 + TypeOfAPoint (may be station, siding etc.)- FK to Types of a point table
 + LocationPoints[]
 #### Structure of LocationPoints subset (relations to DB)
-Id - PK
-StationId - FK to Stations
-GeometryId [optional] - FK to geometries
-BeginningKmpost [optional] 
-CentreKmpost
-EndingKmpost [optional] 
-RailwayId - FK to railways
++ Id - PK
++ StationId - FK to Stations
++ GeometryId [optional] - FK to geometries
++ BeginningKmpost [optional] 
++ CentreKmpost
++ EndingKmpost [optional] 
++ RailwayId - FK to railways
 #### Types of a point
 + Id - PK
 + AbbreviatedName - like PO, ST
