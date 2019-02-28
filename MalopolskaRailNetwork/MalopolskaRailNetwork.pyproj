@@ -32,6 +32,7 @@
     <Content Include="Data\DataSnapshots\FinalDatasets\Railways_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\RailwayUnits_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\RollingStock_Dataset.json" />
+    <Content Include="Data\DataSnapshots\FinalDatasets\StationsToGeometries_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\Stations_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\TypesOfAPoint_Dataset.json" />
     <Content Include="Documents\Conclusions.md">

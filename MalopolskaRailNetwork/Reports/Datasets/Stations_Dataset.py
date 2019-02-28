@@ -75,6 +75,7 @@ for s in stations:
         for point in s['WMSData']['LocationPoints']:
             rel = dict()
             rel['Id'] = index_relationships
+            rel['StationId'] = s['Id']
             rel['BeginningKmpost'] = float(point['KM_POCZ'])
             rel['CentreKmpost'] = float(point['KM_OSI'])
             rel['EndingKmpost'] = float(point['KM_KONC'])
@@ -102,6 +103,7 @@ for r in relationships:
     if(element not in Hashset_relationships):
             rel = dict()
             rel['Id'] = index_relationships
+            rel['StationId'] = r['ObjectId']
             rel['BeginningKmpost'] = None
             rel['CentreKmpost'] = float(r['KilometerPost'])
             rel['EndingKmpost'] = None
@@ -127,4 +129,10 @@ import src.JSONTool as jst
 path = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\Stations_Dataset.json'
 
 jst.JSONSerialize(Stations_Dataset, path)
+
+path_relations = 'C:\\Users\\Dell\\source\\repos\\MalopolskaRailNetwork\\MalopolskaRailNetwork\\Data\\DataSnapshots\\FinalDatasets\\StationsToGeometries_Dataset.json'
+
+jst.JSONSerialize(Relationships_Dataset, path_relations)
+
 print("serialising done - stations")
+
