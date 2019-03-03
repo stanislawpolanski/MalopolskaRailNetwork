@@ -6,6 +6,15 @@ Railways_Geometries = Source_Railways.ReturnGeometriesPartialDataset()
 RailwayUnits_Geometries = Source_RailwayUnits.ReturnGeometriesPartialDataset()
 Stations_Geometries = Source_Stations.ReturnGeometriesPartialDataset()
 
+for r in Railways_Geometries:
+	r['GeometryType'] = 'LineString'
+
+for u in RailwayUnits_Geometries:
+	u['GeometryType'] = 'MultiPolygon'
+
+for s in Stations_Geometries:
+	s['GeometryType'] = 'Point'
+
 Geometries_Dataset = RailwayUnits_Geometries + Railways_Geometries + Stations_Geometries
 
 import src.JSONTool as jst
