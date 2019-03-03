@@ -40,6 +40,7 @@ def ProcessDatasets():
         new['Name'] = r['Name']
         new['Number'] = int(r['Number'])
         new['OwnerId'] = int(r['OwnerId'])
+        
 
         if(r['Geometry'] is None):
             new['GeometryId'] = None
@@ -49,11 +50,14 @@ def ProcessDatasets():
             geometry = dict()
             geometry['Id'] = index
             geometry['Value'] = r['Geometry']
-
             index += 1
 
+        
+        
         Railways_Dataset.append(new)
-        Geometries_Partial_Dataset.append(geometry)
+        if(geometry is not None):
+            Geometries_Partial_Dataset.append(geometry)
+        geometry = None
 
 ProcessDatasets()
 
