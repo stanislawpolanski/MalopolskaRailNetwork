@@ -10,7 +10,7 @@ for r in Railways_Geometries:
 	r['Value'] = 'LINESTRING(' + r['Value'] + ')'
 
 for u in RailwayUnits_Geometries:
-	u['Value'] = 'POLYGON(' + u['Value'] + ')'
+	u['Value'] = 'MULTIPOLYGON(((' + u['Value'] + ')))'
 
 for s in Stations_Geometries:
 	s['Value'] = 'POINT(' + s['Value'] + ')'
