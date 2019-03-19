@@ -29,6 +29,8 @@
     <Content Include="Data\DataInJSON\Stations.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\Geometries_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\Owners_Dataset.json" />
+    <Content Include="Data\DataSnapshots\FinalDatasets\PhotosToObjects_Dataset.json" />
+    <Content Include="Data\DataSnapshots\FinalDatasets\Photos_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\Railways_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\RailwayUnits_Dataset.json" />
     <Content Include="Data\DataSnapshots\FinalDatasets\RollingStock_Dataset.json" />
@@ -250,6 +252,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\Datasets\Owners_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\PhotosToObjects_Dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Datasets\Photos_Dataset.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reports\Datasets\Railways_Dataset.py">
